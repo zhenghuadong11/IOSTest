@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="VEo-fA-vaS">
             <objects>
-                <viewController id="P0P-zK-aBT" sceneMemberID="viewController">
+                <viewController id="P0P-zK-aBT" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HnZ-fs-fi0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="24" y="92" width="329" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-SB-36r">
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="dfd" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" background="login_back" disabledBackground="password" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-SB-36r">
                                 <rect key="frame" x="127" y="386" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -60,10 +60,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG0-Cn-ZXO">
+                                <rect key="frame" x="182" y="532" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="P0P-zK-aBT" eventType="touchUpInside" id="fti-mi-FO2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I4w-la-iFs"/>
                     </view>
+                    <connections>
+                        <outlet property="backImageVIew" destination="Yqk-1i-tJm" id="dtb-MZ-NaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxx-Ii-HZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,5 +86,6 @@
     <resources>
         <image name="login_back" width="750" height="1336"/>
         <image name="logo" width="696" height="324"/>
+        <image name="password" width="12" height="18"/>
     </resources>
 </document>

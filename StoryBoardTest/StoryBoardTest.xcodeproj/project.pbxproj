@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18247558200849AD0096FB4F /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18247557200849AD0096FB4F /* MYTabBarViewController.m */; };
+		1824755B200854C10096FB4F /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824755A200854C10096FB4F /* Item2ViewController.m */; };
+		1824755D200856590096FB4F /* ViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824755C200856590096FB4F /* ViewCell.xib */; };
+		18247560200863F80096FB4F /* Item2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824755F200863F80096FB4F /* Item2TableViewCell.m */; };
+		18247566200883720096FB4F /* Item1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18247565200883720096FB4F /* Item1TableViewController.m */; };
+		1824756C20088B7F0096FB4F /* Item3View.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824756B20088B7F0096FB4F /* Item3View.m */; };
+		1824756E20088BC90096FB4F /* Item3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824756D20088BC90096FB4F /* Item3View.xib */; };
 		1891220E20075B8700085676 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891220D20075B8700085676 /* AppDelegate.m */; };
 		1891221120075B8700085676 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891221020075B8700085676 /* ViewController.m */; };
 		1891221420075B8700085676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891221220075B8700085676 /* Main.storyboard */; };
@@ -37,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18247556200849AD0096FB4F /* MYTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
+		18247557200849AD0096FB4F /* MYTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
+		18247559200854C10096FB4F /* Item2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item2ViewController.h; sourceTree = "<group>"; };
+		1824755A200854C10096FB4F /* Item2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
+		1824755C200856590096FB4F /* ViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCell.xib; sourceTree = "<group>"; };
+		1824755E200863F80096FB4F /* Item2TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item2TableViewCell.h; sourceTree = "<group>"; };
+		1824755F200863F80096FB4F /* Item2TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item2TableViewCell.m; sourceTree = "<group>"; };
+		18247564200883720096FB4F /* Item1TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item1TableViewController.h; sourceTree = "<group>"; };
+		18247565200883720096FB4F /* Item1TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item1TableViewController.m; sourceTree = "<group>"; };
+		1824756A20088B7F0096FB4F /* Item3View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item3View.h; sourceTree = "<group>"; };
+		1824756B20088B7F0096FB4F /* Item3View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item3View.m; sourceTree = "<group>"; };
+		1824756D20088BC90096FB4F /* Item3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Item3View.xib; sourceTree = "<group>"; };
 		1891220920075B8700085676 /* StoryBoardTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1891220C20075B8700085676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1891220D20075B8700085676 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +101,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1824756720088AC20096FB4F /* item1 */ = {
+			isa = PBXGroup;
+			children = (
+				18247564200883720096FB4F /* Item1TableViewController.h */,
+				18247565200883720096FB4F /* Item1TableViewController.m */,
+			);
+			path = item1;
+			sourceTree = "<group>";
+		};
+		1824756820088ACC0096FB4F /* item2 */ = {
+			isa = PBXGroup;
+			children = (
+				18247559200854C10096FB4F /* Item2ViewController.h */,
+				1824755A200854C10096FB4F /* Item2ViewController.m */,
+				1824755E200863F80096FB4F /* Item2TableViewCell.h */,
+				1824755F200863F80096FB4F /* Item2TableViewCell.m */,
+			);
+			path = item2;
+			sourceTree = "<group>";
+		};
+		1824756920088AD30096FB4F /* item3 */ = {
+			isa = PBXGroup;
+			children = (
+				1824756A20088B7F0096FB4F /* Item3View.h */,
+				1824756B20088B7F0096FB4F /* Item3View.m */,
+				1824756D20088BC90096FB4F /* Item3View.xib */,
+			);
+			path = item3;
+			sourceTree = "<group>";
+		};
 		1891220020075B8600085676 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +155,9 @@
 		1891220B20075B8700085676 /* StoryBoardTest */ = {
 			isa = PBXGroup;
 			children = (
+				1824756920088AD30096FB4F /* item3 */,
+				1824756820088ACC0096FB4F /* item2 */,
+				1824756720088AC20096FB4F /* item1 */,
 				1891220C20075B8700085676 /* AppDelegate.h */,
 				1891220D20075B8700085676 /* AppDelegate.m */,
 				1891220F20075B8700085676 /* ViewController.h */,
@@ -116,6 +168,9 @@
 				1891221A20075B8700085676 /* Info.plist */,
 				1891221B20075B8700085676 /* main.m */,
 				1891223E20075BBF00085676 /* Storyboard.storyboard */,
+				18247556200849AD0096FB4F /* MYTabBarViewController.h */,
+				18247557200849AD0096FB4F /* MYTabBarViewController.m */,
+				1824755C200856590096FB4F /* ViewCell.xib */,
 			);
 			path = StoryBoardTest;
 			sourceTree = "<group>";
@@ -246,7 +301,9 @@
 			files = (
 				1891221920075B8700085676 /* LaunchScreen.storyboard in Resources */,
 				1891223F20075BBF00085676 /* Storyboard.storyboard in Resources */,
+				1824755D200856590096FB4F /* ViewCell.xib in Resources */,
 				189122412007643800085676 /* StoryboardFrame.storyboard in Resources */,
+				1824756E20088BC90096FB4F /* Item3View.xib in Resources */,
 				1891221620075B8700085676 /* Assets.xcassets in Resources */,
 				1891221420075B8700085676 /* Main.storyboard in Resources */,
 			);
@@ -273,9 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824755B200854C10096FB4F /* Item2ViewController.m in Sources */,
+				18247558200849AD0096FB4F /* MYTabBarViewController.m in Sources */,
 				1891221120075B8700085676 /* ViewController.m in Sources */,
+				1824756C20088B7F0096FB4F /* Item3View.m in Sources */,
 				1891221C20075B8700085676 /* main.m in Sources */,
+				18247566200883720096FB4F /* Item1TableViewController.m in Sources */,
 				1891220E20075B8700085676 /* AppDelegate.m in Sources */,
+				18247560200863F80096FB4F /* Item2TableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

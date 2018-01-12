@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "MYTabBarViewController.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backImageVIew;
 
 @end
 
@@ -17,8 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.backImageVIew.frame = self.view.bounds;
+    
 }
 
+- (IBAction)btnClick:(id)sender {
+    UIStoryboard * story = [UIStoryboard storyboardWithName:@"StoryboardFrame" bundle:[NSBundle mainBundle]];
+    MYTabBarViewController * tabView =  [story instantiateViewControllerWithIdentifier:@"Start"];
+    
+    
+    [self presentViewController:tabView animated:true completion:nil];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
