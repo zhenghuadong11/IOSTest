@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F169A9062028AECC0036805F /* HDNullUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9052028AECC0036805F /* HDNullUtil.m */; };
+		F169A90A2028B0AC0036805F /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9082028B0AC0036805F /* HDTip.m */; };
+		F169A90E2028B1E90036805F /* NullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A90C2028B1E90036805F /* NullViewController.m */; };
+		F169A90F2028B1E90036805F /* NullViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F169A90D2028B1E90036805F /* NullViewController.xib */; };
 		F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13EC2027536B00CA169D /* AppDelegate.m */; };
 		F1FC13F02027536B00CA169D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13EF2027536B00CA169D /* ViewController.m */; };
 		F1FC13F32027536B00CA169D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FC13F12027536B00CA169D /* Main.storyboard */; };
@@ -39,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F169A9042028AECC0036805F /* HDNullUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNullUtil.h; sourceTree = "<group>"; };
+		F169A9052028AECC0036805F /* HDNullUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNullUtil.m; sourceTree = "<group>"; };
+		F169A9082028B0AC0036805F /* HDTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTip.m; sourceTree = "<group>"; };
+		F169A9092028B0AC0036805F /* HDTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTip.h; sourceTree = "<group>"; };
+		F169A90B2028B1E90036805F /* NullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NullViewController.h; sourceTree = "<group>"; };
+		F169A90C2028B1E90036805F /* NullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NullViewController.m; sourceTree = "<group>"; };
+		F169A90D2028B1E90036805F /* NullViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NullViewController.xib; sourceTree = "<group>"; };
 		F1FC13E82027536B00CA169D /* HDUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FC13EB2027536B00CA169D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1FC13EC2027536B00CA169D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F169A9032028AE440036805F /* nullUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F169A9042028AECC0036805F /* HDNullUtil.h */,
+				F169A9052028AECC0036805F /* HDNullUtil.m */,
+				F169A90B2028B1E90036805F /* NullViewController.h */,
+				F169A90C2028B1E90036805F /* NullViewController.m */,
+				F169A90D2028B1E90036805F /* NullViewController.xib */,
+			);
+			path = nullUtil;
+			sourceTree = "<group>";
+		};
+		F169A9072028B0980036805F /* myLib */ = {
+			isa = PBXGroup;
+			children = (
+				F169A9092028B0AC0036805F /* HDTip.h */,
+				F169A9082028B0AC0036805F /* HDTip.m */,
+			);
+			path = myLib;
+			sourceTree = "<group>";
+		};
 		F1FC13DF2027536B00CA169D = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +182,8 @@
 		F1FC141D202753B000CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F169A9072028B0980036805F /* myLib */,
+				F169A9032028AE440036805F /* nullUtil */,
 				F1FC14282027611600CA169D /* colorUtil */,
 				F1FC14212027559100CA169D /* keyboardHeightUtil */,
 			);
@@ -283,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FC13F82027536B00CA169D /* LaunchScreen.storyboard in Resources */,
+				F169A90F2028B1E90036805F /* NullViewController.xib in Resources */,
 				F1FC13F52027536B00CA169D /* Assets.xcassets in Resources */,
 				F1FC13F32027536B00CA169D /* Main.storyboard in Resources */,
 			);
@@ -313,7 +348,10 @@
 				F1FC13F02027536B00CA169D /* ViewController.m in Sources */,
 				F1FC14202027542100CA169D /* HDShowViewController.m in Sources */,
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
+				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
 				F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */,
+				F169A90A2028B0AC0036805F /* HDTip.m in Sources */,
+				F169A90E2028B1E90036805F /* NullViewController.m in Sources */,
 				F1FC1427202755EB00CA169D /* HDKeyBoardHeightUtil.m in Sources */,
 				F1FC142B2027613500CA169D /* HDColorUtil.m in Sources */,
 			);
