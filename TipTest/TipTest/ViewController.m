@@ -34,7 +34,7 @@
     [HDTip alertTipTitle:@"标题" message:@"这是提示信息" actions:@{@"1":^{
         [HDTip alertTipTitle:@"test" message:@"1"];
     }} buttons:@"1",@"2",@"3",nil];
-//    [HDTip alertTipTitle:@"标题" message:@"这是提示信息"];
+
 }
 
 

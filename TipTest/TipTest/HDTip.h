@@ -22,10 +22,10 @@
  */
 +(void) alertTipTitle:(NSString *)title message:(NSString *)message buttons:(NSArray<NSString *> *)  buttonNames actions:(NSDictionary<NSString *,void(^)(void)> *) actions;
 /*
- *  需要支持 ios7及以下的用这个，超级无敌麻烦
+ *  需要支持 ios7及以下的用这个，超级无敌麻烦,这个弃用了，真是麻烦，只支持iOS 8
  *
  */
 +(void) alertTipTitle:(NSString *)title message:(NSString *)message actions:(NSDictionary<NSString *,void(^)(void)> *) actions buttons:(NSString *) buttonNames, ...NS_REQUIRES_NIL_TERMINATION;
-
++(void) alertTipTitle:(NSString *)title message:(NSString *)message buttons:(NSArray<NSString *> *)  buttonNames actions:(NSDictionary<NSString *,void(^)(void)> *) actions fieldItems:(NSArray<NSNumber *> *) fieldItems;
 +(void) test;
 @end
