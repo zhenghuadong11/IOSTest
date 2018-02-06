@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "KeyBoardHeihgtViewController.h"
+#import "NullViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.models = @[@"键盘弹出高度处理"];
-    self.nextControllers = @[[[KeyBoardHeihgtViewController alloc] init]];
+    self.models = @[@"键盘弹出高度处理",@"对空的处理"];
+    self.nextControllers = @[[[KeyBoardHeihgtViewController alloc] init],[[NullViewController alloc] init]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
