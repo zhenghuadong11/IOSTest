@@ -9,7 +9,5 @@
 #import "HDColorUtil.h"
 
 @implementation HDColorUtil
-+(BOOL)isEquelColor1:(UIColor *)color1 Color2:(UIColor *)color2{
-   return CGColorEqualToColor(color1.CGColor, color2.CGColor);
-}
+
 @end
