@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RequestButtonViewController.h"
+#import "PullViewController.h"
 //#import ""
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,7 +36,7 @@
 }
 
 -(void) setDefault{
-    _models = @[@"请求按钮"];
+    _models = @[@"请求按钮",@"下拉视图"];
 }
 -(void) setSubViews{
     _tableView = [[UITableView alloc] init];
@@ -63,6 +64,14 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        PullViewController * vc = [[PullViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+        
+        return;
+    }
+    
+    
     RequestButtonViewController * vc = [[RequestButtonViewController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
 }
