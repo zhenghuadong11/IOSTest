@@ -6,10 +6,10 @@
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import "Macro_Http.h"
+#import "HDMacro_Http.h"
 
-static Macro_Http * http_macro;
-@implementation Macro_Http
+static HDMacro_Http * http_macro;
+@implementation HDMacro_Http
 
 +(instancetype)share{
     static dispatch_once_t onceToken;

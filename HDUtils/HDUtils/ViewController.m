@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "KeyBoardHeihgtViewController.h"
 #import "NullViewController.h"
+#import "DateViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.models = @[@"键盘弹出高度处理",@"对空的处理"];
-    self.nextControllers = @[[[KeyBoardHeihgtViewController alloc] init],[[NullViewController alloc] init]];
+    self.models = @[@"键盘弹出高度处理",@"对空的处理",@"日期处理"];
+    self.nextControllers = @[[[KeyBoardHeihgtViewController alloc] init],[[NullViewController alloc] init],[[DateViewController alloc] init]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

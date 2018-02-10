@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Macro_Notification : NSObject
+/**
+ 项目所有的通知的name都在这里，每个name应该有很好的标示
+ */
+@interface HDMacro_Notification : NSObject
 +(instancetype) share;
 
 @property(nonatomic,copy) NSString * deviceTokenGet;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MYOperationQueue : NSOperationQueue
+@interface HDOperationQueue : NSOperationQueue
 
 +(instancetype)shareInstall;
 

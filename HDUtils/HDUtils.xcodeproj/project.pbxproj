@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F114262D202F38A6000D6ACA /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F114262B202F38A6000D6ACA /* DateViewController.m */; };
+		F114262E202F38A6000D6ACA /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F114262C202F38A6000D6ACA /* DateViewController.xib */; };
+		F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142630202F3A70000D6ACA /* NSDate+Time.m */; };
+		F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142633202F3ADA000D6ACA /* NSString+date.m */; };
 		F169A9062028AECC0036805F /* HDNullUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9052028AECC0036805F /* HDNullUtil.m */; };
 		F169A90A2028B0AC0036805F /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9082028B0AC0036805F /* HDTip.m */; };
 		F169A90E2028B1E90036805F /* NullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A90C2028B1E90036805F /* NullViewController.m */; };
@@ -43,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F114262A202F38A6000D6ACA /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		F114262B202F38A6000D6ACA /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		F114262C202F38A6000D6ACA /* DateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
+		F114262F202F3A70000D6ACA /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
+		F1142630202F3A70000D6ACA /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
+		F1142632202F3ADA000D6ACA /* NSString+date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+date.h"; sourceTree = "<group>"; };
+		F1142633202F3ADA000D6ACA /* NSString+date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+date.m"; sourceTree = "<group>"; };
 		F169A9042028AECC0036805F /* HDNullUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNullUtil.h; sourceTree = "<group>"; };
 		F169A9052028AECC0036805F /* HDNullUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNullUtil.m; sourceTree = "<group>"; };
 		F169A9082028B0AC0036805F /* HDTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTip.m; sourceTree = "<group>"; };
@@ -101,6 +112,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1142629202F3862000D6ACA /* DateUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F114262F202F3A70000D6ACA /* NSDate+Time.h */,
+				F1142630202F3A70000D6ACA /* NSDate+Time.m */,
+				F114262A202F38A6000D6ACA /* DateViewController.h */,
+				F114262B202F38A6000D6ACA /* DateViewController.m */,
+				F114262C202F38A6000D6ACA /* DateViewController.xib */,
+				F1142632202F3ADA000D6ACA /* NSString+date.h */,
+				F1142633202F3ADA000D6ACA /* NSString+date.m */,
+			);
+			path = DateUtil;
+			sourceTree = "<group>";
+		};
 		F169A9032028AE440036805F /* nullUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +207,7 @@
 		F1FC141D202753B000CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F1142629202F3862000D6ACA /* DateUtil */,
 				F169A9072028B0980036805F /* myLib */,
 				F169A9032028AE440036805F /* nullUtil */,
 				F1FC14282027611600CA169D /* colorUtil */,
@@ -320,6 +346,7 @@
 				F169A90F2028B1E90036805F /* NullViewController.xib in Resources */,
 				F1FC13F52027536B00CA169D /* Assets.xcassets in Resources */,
 				F1FC13F32027536B00CA169D /* Main.storyboard in Resources */,
+				F114262E202F38A6000D6ACA /* DateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +373,14 @@
 			files = (
 				F1FC1424202755C200CA169D /* KeyBoardHeihgtViewController.m in Sources */,
 				F1FC13F02027536B00CA169D /* ViewController.m in Sources */,
+				F114262D202F38A6000D6ACA /* DateViewController.m in Sources */,
 				F1FC14202027542100CA169D /* HDShowViewController.m in Sources */,
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
+				F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */,
 				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
 				F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */,
 				F169A90A2028B0AC0036805F /* HDTip.m in Sources */,
+				F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */,
 				F169A90E2028B1E90036805F /* NullViewController.m in Sources */,
 				F1FC1427202755EB00CA169D /* HDKeyBoardHeightUtil.m in Sources */,
 				F1FC142B2027613500CA169D /* HDColorUtil.m in Sources */,

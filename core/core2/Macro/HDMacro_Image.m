@@ -6,13 +6,13 @@
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "Macro_Image.h"
-static Macro_Image * macro;
-@implementation Macro_Image
+#import "HDMacro_Image.h"
+static HDMacro_Image * macro;
+@implementation HDMacro_Image
 +(instancetype)share{
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        macro = [[Macro_Image alloc] init];
+        macro = [[HDMacro_Image alloc] init];
     });
     return macro;
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "MYCoding.h"
+#import "HDCoding.h"
 
-@implementation MYCoding
+@implementation HDCoding
 
 +(void)saveWithObject:(id)object andSpecialFile:(NSString *)file{
     NSString * baseStr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;

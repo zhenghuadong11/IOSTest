@@ -6,10 +6,10 @@
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import "MYNetConnnect.h"
+#import "HDNetConnnect.h"
 #import "HDDefault.h"
 
-@implementation MYNetConnnect
+@implementation HDNetConnnect
 
 +(void)request:(NSURLRequest *)requst withResult:(void (^)(NSData *, NSURLResponse *, NSError *))resultBlock{
 
@@ -115,11 +115,11 @@
 #pragma mark -- 默认的返回字典，字符串和数组
 +(void)requestBaseArrBlockWithUrlStr:(NSString *)url params:(NSDictionary *)params successBlock:(void (^)(NSArray *))successBlock failtureBlock:(void (^)(NSError *))failtureBlock{
     
-    [MYNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [HDNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil){
             if(failtureBlock == nil)
             {
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -139,13 +139,13 @@
 +(void)requestBaseDicBlockWithUrlStr:(NSString *)url params:(NSDictionary *)params successBlock:(void (^)(NSDictionary *))successBlock failtureBlock:(void (^)(NSError *))failtureBlock{
     
     
-    [MYNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [HDNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         if (error != nil){
             if(failtureBlock == nil)
             {
 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -170,12 +170,12 @@
 }
 +(void)requestBaseStrBlockWithUrlStr:(NSString *)url params:(NSDictionary *)params successBlock:(void (^)(NSString *))successBlock failtureBlock:(void (^)(NSError *))failtureBlock{
 
-    [MYNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [HDNetConnnect postRequest:url WithParams:params withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil){
             if(failtureBlock == nil)
             {
                 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -199,13 +199,13 @@
 +(void)requestBaseDicBlockWithUrlStr:(NSString *)url params:(NSDictionary *)params requestTime:(NSTimeInterval) time successBlock:(void (^)(NSDictionary *))successBlock failtureBlock:(void (^)(NSError *))failtureBlock{
     
     
-    [MYNetConnnect postRequest:url WithParams:params requestTime:time withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [HDNetConnnect postRequest:url WithParams:params requestTime:time withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         if (error != nil){
             if(failtureBlock == nil)
             {
                 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -235,7 +235,7 @@
             if(failtureBlock == nil)
             {
                 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -261,7 +261,7 @@
         if (error != nil){
             if(failtureBlock == nil)
             {
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -282,7 +282,7 @@
             if(failtureBlock == nil)
             {
                 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);
@@ -298,13 +298,13 @@
 }
 
 +(void) requestBaseDicBlockWithUrlStr:(NSString *) url params:(NSDictionary *)params withBaseUrlNum:(NSInteger)baseUrlNum successBlock:(void(^)(NSDictionary * result)) successBlock failtureBlock:(void(^)(NSError * result)) failtureBlock{
-    [MYNetConnnect postRequest:url WithParams:params withBaseUrlNum:baseUrlNum withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [HDNetConnnect postRequest:url WithParams:params withBaseUrlNum:baseUrlNum withResult:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         if (error != nil){
             if(failtureBlock == nil)
             {
                 
-                [MYNetConnnect defaultFailtureOperation];
+                [HDNetConnnect defaultFailtureOperation];
                 return;
             }
             failtureBlock(error);

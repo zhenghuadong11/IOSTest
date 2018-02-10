@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Macro_Image : NSObject
+/**
+ 这里是图片的名字类，感觉也没有必要，保留一下吧
+ */
+@interface HDMacro_Image : NSObject
 +(instancetype) share;
 @property(nonatomic,copy) NSString * login_back;
 @property(nonatomic,copy) NSString * logo;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Macro_Default : NSObject
+@interface HDMacro_Default : NSObject
 +(instancetype) share;
 
 @property(nonatomic,copy)NSString * token;

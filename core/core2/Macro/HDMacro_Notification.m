@@ -6,15 +6,15 @@
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "Macro_Notification.h"
-static Macro_Notification * _share;
+#import "HDMacro_Notification.h"
+static HDMacro_Notification * _share;
 
-@implementation Macro_Notification
+@implementation HDMacro_Notification
 
 +(instancetype)share{
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        _share = [[Macro_Notification alloc] init];
+        _share = [[HDMacro_Notification alloc] init];
     });
     return _share;
 }

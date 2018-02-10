@@ -6,15 +6,15 @@
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import "MYOperationQueue.h"
+#import "HDOperationQueue.h"
 
-static MYOperationQueue * queue;
-@implementation MYOperationQueue
+static HDOperationQueue * queue;
+@implementation HDOperationQueue
 
 +(instancetype) shareInstall{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        queue = [[MYOperationQueue alloc] init];
+        queue = [[HDOperationQueue alloc] init];
         queue.maxConcurrentOperationCount = 5;
     });
     return queue;

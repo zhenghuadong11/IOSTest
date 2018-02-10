@@ -7,7 +7,7 @@
 //
 
 #import "CGNetConnect.h"
-#import "MYNetConnnect.h"
+#import "HDNetConnnect.h"
 #import "MYDate.h"
 #import "SecurityUtil.h"
 

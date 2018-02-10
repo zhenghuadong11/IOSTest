@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Macro_Http : NSObject
+/**
+ 所有的请求路径都写在这里，方便找
+ */
+@interface HDMacro_Http : NSObject
 
 +(instancetype) share;
 

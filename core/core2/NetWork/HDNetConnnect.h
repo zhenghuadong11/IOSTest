@@ -18,7 +18,7 @@ typedef enum{
 }RequestStyle;
 
 
-@interface MYNetConnnect : NSObject
+@interface HDNetConnnect : NSObject
 
 
 +(void) request:(NSURLRequest *) requst withResult:(void(^)(NSData * data,NSURLResponse * responsse,NSError * error)) resultBlock;

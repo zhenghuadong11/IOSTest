@@ -6,10 +6,10 @@
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "Macro_Default.h"
+#import "HDMacro_Default.h"
 
-static Macro_Default * default_macro;
-@implementation Macro_Default
+static HDMacro_Default * default_macro;
+@implementation HDMacro_Default
 
 +(instancetype)share{
     static dispatch_once_t onceToken;

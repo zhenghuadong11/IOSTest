@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MYCoding : NSObject
+@interface HDCoding : NSObject
 /*
  ＊ object 对象
  * file 特殊的标志
