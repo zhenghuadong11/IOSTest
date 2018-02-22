@@ -17,6 +17,10 @@
 		F169A90A2028B0AC0036805F /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9082028B0AC0036805F /* HDTip.m */; };
 		F169A90E2028B1E90036805F /* NullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A90C2028B1E90036805F /* NullViewController.m */; };
 		F169A90F2028B1E90036805F /* NullViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F169A90D2028B1E90036805F /* NullViewController.xib */; };
+		F1E8A088203F0EDE00410AD7 /* animation.pages in Resources */ = {isa = PBXBuildFile; fileRef = F1E8A087203F0EDE00410AD7 /* animation.pages */; };
+		F1E8A08B203F0F5E00410AD7 /* HDAnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E8A08A203F0F5E00410AD7 /* HDAnimationUtil.m */; };
+		F1E8A08E203F113600410AD7 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E8A08D203F113600410AD7 /* AnimationViewController.m */; };
+		F1E8A091203F180A00410AD7 /* HDAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E8A090203F180A00410AD7 /* HDAnimationModel.m */; };
 		F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13EC2027536B00CA169D /* AppDelegate.m */; };
 		F1FC13F02027536B00CA169D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13EF2027536B00CA169D /* ViewController.m */; };
 		F1FC13F32027536B00CA169D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FC13F12027536B00CA169D /* Main.storyboard */; };
@@ -67,6 +71,13 @@
 		F169A90B2028B1E90036805F /* NullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NullViewController.h; sourceTree = "<group>"; };
 		F169A90C2028B1E90036805F /* NullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NullViewController.m; sourceTree = "<group>"; };
 		F169A90D2028B1E90036805F /* NullViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NullViewController.xib; sourceTree = "<group>"; };
+		F1E8A087203F0EDE00410AD7 /* animation.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = animation.pages; sourceTree = "<group>"; };
+		F1E8A089203F0F5E00410AD7 /* HDAnimationUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAnimationUtil.h; sourceTree = "<group>"; };
+		F1E8A08A203F0F5E00410AD7 /* HDAnimationUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAnimationUtil.m; sourceTree = "<group>"; };
+		F1E8A08C203F113600410AD7 /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		F1E8A08D203F113600410AD7 /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		F1E8A08F203F180A00410AD7 /* HDAnimationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAnimationModel.h; sourceTree = "<group>"; };
+		F1E8A090203F180A00410AD7 /* HDAnimationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAnimationModel.m; sourceTree = "<group>"; };
 		F1FC13E82027536B00CA169D /* HDUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FC13EB2027536B00CA169D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1FC13EC2027536B00CA169D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +182,20 @@
 			path = myLib;
 			sourceTree = "<group>";
 		};
+		F1E8A086203F0EDE00410AD7 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8A087203F0EDE00410AD7 /* animation.pages */,
+				F1E8A089203F0F5E00410AD7 /* HDAnimationUtil.h */,
+				F1E8A08A203F0F5E00410AD7 /* HDAnimationUtil.m */,
+				F1E8A08C203F113600410AD7 /* AnimationViewController.h */,
+				F1E8A08D203F113600410AD7 /* AnimationViewController.m */,
+				F1E8A08F203F180A00410AD7 /* HDAnimationModel.h */,
+				F1E8A090203F180A00410AD7 /* HDAnimationModel.m */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		F1FC13DF2027536B00CA169D = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +256,7 @@
 		F1FC141D202753B000CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F1E8A086203F0EDE00410AD7 /* animation */,
 				F12AEAC820347C750028C01C /* valite */,
 				F12AEAC42033F66A0028C01C /* object */,
 				F1142629202F3862000D6ACA /* DateUtil */,
@@ -369,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FC13F82027536B00CA169D /* LaunchScreen.storyboard in Resources */,
+				F1E8A088203F0EDE00410AD7 /* animation.pages in Resources */,
 				F169A90F2028B1E90036805F /* NullViewController.xib in Resources */,
 				F1FC13F52027536B00CA169D /* Assets.xcassets in Resources */,
 				F1FC13F32027536B00CA169D /* Main.storyboard in Resources */,
@@ -403,12 +430,15 @@
 				F1FC14202027542100CA169D /* HDShowViewController.m in Sources */,
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
 				F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */,
+				F1E8A08B203F0F5E00410AD7 /* HDAnimationUtil.m in Sources */,
 				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
 				F12AEACB20347C860028C01C /* HDValite.m in Sources */,
+				F1E8A08E203F113600410AD7 /* AnimationViewController.m in Sources */,
 				F12AEAC72033F6A10028C01C /* NSObject+Util.m in Sources */,
 				F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */,
 				F169A90A2028B0AC0036805F /* HDTip.m in Sources */,
 				F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */,
+				F1E8A091203F180A00410AD7 /* HDAnimationModel.m in Sources */,
 				F169A90E2028B1E90036805F /* NullViewController.m in Sources */,
 				F1FC1427202755EB00CA169D /* HDKeyBoardHeightUtil.m in Sources */,
 				F1FC142B2027613500CA169D /* HDColorUtil.m in Sources */,
