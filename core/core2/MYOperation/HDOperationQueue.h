@@ -15,5 +15,8 @@
 -(void) addAaynBlock:(void(^)(void)) asynBlock afterMainBlock:(void(^)(void)) mainBlock;
 
 +(void) waitMainBlock:(void(^)(void)) block for:(NSTimeInterval)time;
-+(void) waitAsynBlock:(void(^)(void)) block for:(NSTimeInterval)time; 
++(void) waitAsynBlock:(void(^)(void)) block for:(NSTimeInterval)time;
+
+
+
 @end

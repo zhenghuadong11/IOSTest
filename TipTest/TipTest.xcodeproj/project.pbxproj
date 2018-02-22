@@ -18,6 +18,9 @@
 		18806A5A2026E094005851BB /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 18806A592026E094005851BB /* HDTip.m */; };
 		18806A5D2026EE89005851BB /* HDDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18806A5C2026EE89005851BB /* HDDefine.m */; };
 		18806A60202703BE005851BB /* HDTipVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18806A5F202703BE005851BB /* HDTipVC.m */; };
+		F16DBE08203BD58B00FBBA6D /* UIView+FRAME_SET.m in Sources */ = {isa = PBXBuildFile; fileRef = F16DBE05203BD58B00FBBA6D /* UIView+FRAME_SET.m */; };
+		F16DBE09203BD58B00FBBA6D /* frame.pages in Resources */ = {isa = PBXBuildFile; fileRef = F16DBE07203BD58B00FBBA6D /* frame.pages */; };
+		F16DBE0E203BFED600FBBA6D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F16DBE0C203BFED600FBBA6D /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,11 @@
 		18806A5C2026EE89005851BB /* HDDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDefine.m; sourceTree = "<group>"; };
 		18806A5E202703BE005851BB /* HDTipVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTipVC.h; sourceTree = "<group>"; };
 		18806A5F202703BE005851BB /* HDTipVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTipVC.m; sourceTree = "<group>"; };
+		F16DBE05203BD58B00FBBA6D /* UIView+FRAME_SET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME_SET.m"; sourceTree = "<group>"; };
+		F16DBE06203BD58B00FBBA6D /* UIView+FRAME_SET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FRAME_SET.h"; sourceTree = "<group>"; };
+		F16DBE07203BD58B00FBBA6D /* frame.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = frame.pages; sourceTree = "<group>"; };
+		F16DBE0C203BFED600FBBA6D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F16DBE0D203BFED600FBBA6D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,8 @@
 		18806A252026E05B005851BB /* TipTest */ = {
 			isa = PBXGroup;
 			children = (
+				F16DBE0A203BFEBD00FBBA6D /* tip */,
+				F16DBE04203BD58B00FBBA6D /* frame */,
 				18806A262026E05B005851BB /* AppDelegate.h */,
 				18806A272026E05B005851BB /* AppDelegate.m */,
 				18806A292026E05B005851BB /* ViewController.h */,
@@ -119,8 +129,6 @@
 				18806A312026E05B005851BB /* LaunchScreen.storyboard */,
 				18806A342026E05B005851BB /* Info.plist */,
 				18806A352026E05B005851BB /* main.m */,
-				18806A582026E094005851BB /* HDTip.h */,
-				18806A592026E094005851BB /* HDTip.m */,
 				18806A5B2026EE89005851BB /* HDDefine.h */,
 				18806A5C2026EE89005851BB /* HDDefine.m */,
 				18806A5E202703BE005851BB /* HDTipVC.h */,
@@ -145,6 +153,35 @@
 				18806A4C2026E05B005851BB /* Info.plist */,
 			);
 			path = TipTestUITests;
+			sourceTree = "<group>";
+		};
+		F16DBE04203BD58B00FBBA6D /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				F16DBE05203BD58B00FBBA6D /* UIView+FRAME_SET.m */,
+				F16DBE06203BD58B00FBBA6D /* UIView+FRAME_SET.h */,
+				F16DBE07203BD58B00FBBA6D /* frame.pages */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		F16DBE0A203BFEBD00FBBA6D /* tip */ = {
+			isa = PBXGroup;
+			children = (
+				F16DBE0B203BFEC400FBBA6D /* lib */,
+			);
+			path = tip;
+			sourceTree = "<group>";
+		};
+		F16DBE0B203BFEC400FBBA6D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				18806A582026E094005851BB /* HDTip.h */,
+				18806A592026E094005851BB /* HDTip.m */,
+				F16DBE0D203BFED600FBBA6D /* MBProgressHUD.h */,
+				F16DBE0C203BFED600FBBA6D /* MBProgressHUD.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16DBE09203BD58B00FBBA6D /* frame.pages in Resources */,
 				18806A332026E05B005851BB /* LaunchScreen.storyboard in Resources */,
 				18806A302026E05B005851BB /* Assets.xcassets in Resources */,
 				18806A2E2026E05B005851BB /* Main.storyboard in Resources */,
@@ -284,8 +322,10 @@
 				18806A362026E05B005851BB /* main.m in Sources */,
 				18806A282026E05B005851BB /* AppDelegate.m in Sources */,
 				18806A5D2026EE89005851BB /* HDDefine.m in Sources */,
+				F16DBE08203BD58B00FBBA6D /* UIView+FRAME_SET.m in Sources */,
 				18806A60202703BE005851BB /* HDTipVC.m in Sources */,
 				18806A5A2026E094005851BB /* HDTip.m in Sources */,
+				F16DBE0E203BFED600FBBA6D /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

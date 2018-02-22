@@ -9,7 +9,7 @@
 #import "PullViewController.h"
 #import "HDPullDownView.h"
 @interface PullViewController ()
-
+@property(nonatomic,strong) HDPullDownView * pullView;
 @end
 
 @implementation PullViewController
@@ -21,26 +21,35 @@
     
     
     
+    UIView * buttonBackView = [[UIView alloc] init];
+    buttonBackView.frame = CGRectMake(100, 100, 300, 300);
     
     
     
     
     UIButton * button = [[UIButton alloc] init];
     
-    button.frame = CGRectMake(100,100, 120, 230);
-    [self.view addSubview:button];
+    
+    
+    button.frame = CGRectMake(20,10, 120, 230);
+    
     button.backgroundColor = [UIColor redColor];
     
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
     
-    
-    
-    NSLog(@"x: %lf, y: %lf",[button convertPoint:CGPointMake(10, 0) toView:nil].x,[button convertPoint:CGPointMake(0, 0) toView:nil].y);
+//    [buttonBackView addSubview:button];
+//    [self.view addSubview:buttonBackView];
+    self.navigationItem.titleView = button;
+    self.pullView = [[HDPullDownView alloc] init];
+    self.pullView.items = @[@"23",@"45",[UIImage imageNamed:@"orange"]];
+
 }
 -(void) buttonClick:(UIButton *) button{
-    HDPullDownView * pullView = [[HDPullDownView alloc] init];
-    pullView.items = @[@"23",@"45",[UIImage imageNamed:@"orange"]];
-    [pullView showToView:button parentController:self];
+
+
+    
+    
+    [self.pullView troggleToView:button parentView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {

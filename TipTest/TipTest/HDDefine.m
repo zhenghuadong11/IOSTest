@@ -8,6 +8,6 @@
 
 #import "HDDefine.h"
 
-@implementation HDDefine
+@implementation HDDefine : NSObject
 
 @end

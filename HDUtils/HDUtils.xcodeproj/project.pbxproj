@@ -11,6 +11,8 @@
 		F114262E202F38A6000D6ACA /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F114262C202F38A6000D6ACA /* DateViewController.xib */; };
 		F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142630202F3A70000D6ACA /* NSDate+Time.m */; };
 		F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142633202F3ADA000D6ACA /* NSString+date.m */; };
+		F12AEAC72033F6A10028C01C /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F12AEAC62033F6A10028C01C /* NSObject+Util.m */; };
+		F12AEACB20347C860028C01C /* HDValite.m in Sources */ = {isa = PBXBuildFile; fileRef = F12AEACA20347C860028C01C /* HDValite.m */; };
 		F169A9062028AECC0036805F /* HDNullUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9052028AECC0036805F /* HDNullUtil.m */; };
 		F169A90A2028B0AC0036805F /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9082028B0AC0036805F /* HDTip.m */; };
 		F169A90E2028B1E90036805F /* NullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A90C2028B1E90036805F /* NullViewController.m */; };
@@ -54,6 +56,10 @@
 		F1142630202F3A70000D6ACA /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
 		F1142632202F3ADA000D6ACA /* NSString+date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+date.h"; sourceTree = "<group>"; };
 		F1142633202F3ADA000D6ACA /* NSString+date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+date.m"; sourceTree = "<group>"; };
+		F12AEAC52033F6A10028C01C /* NSObject+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Util.h"; sourceTree = "<group>"; };
+		F12AEAC62033F6A10028C01C /* NSObject+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
+		F12AEAC920347C860028C01C /* HDValite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDValite.h; sourceTree = "<group>"; };
+		F12AEACA20347C860028C01C /* HDValite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDValite.m; sourceTree = "<group>"; };
 		F169A9042028AECC0036805F /* HDNullUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNullUtil.h; sourceTree = "<group>"; };
 		F169A9052028AECC0036805F /* HDNullUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNullUtil.m; sourceTree = "<group>"; };
 		F169A9082028B0AC0036805F /* HDTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTip.m; sourceTree = "<group>"; };
@@ -124,6 +130,24 @@
 				F1142633202F3ADA000D6ACA /* NSString+date.m */,
 			);
 			path = DateUtil;
+			sourceTree = "<group>";
+		};
+		F12AEAC42033F66A0028C01C /* object */ = {
+			isa = PBXGroup;
+			children = (
+				F12AEAC52033F6A10028C01C /* NSObject+Util.h */,
+				F12AEAC62033F6A10028C01C /* NSObject+Util.m */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
+		F12AEAC820347C750028C01C /* valite */ = {
+			isa = PBXGroup;
+			children = (
+				F12AEAC920347C860028C01C /* HDValite.h */,
+				F12AEACA20347C860028C01C /* HDValite.m */,
+			);
+			path = valite;
 			sourceTree = "<group>";
 		};
 		F169A9032028AE440036805F /* nullUtil */ = {
@@ -207,6 +231,8 @@
 		F1FC141D202753B000CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F12AEAC820347C750028C01C /* valite */,
+				F12AEAC42033F66A0028C01C /* object */,
 				F1142629202F3862000D6ACA /* DateUtil */,
 				F169A9072028B0980036805F /* myLib */,
 				F169A9032028AE440036805F /* nullUtil */,
@@ -378,6 +404,8 @@
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
 				F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */,
 				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
+				F12AEACB20347C860028C01C /* HDValite.m in Sources */,
+				F12AEAC72033F6A10028C01C /* NSObject+Util.m in Sources */,
 				F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */,
 				F169A90A2028B0AC0036805F /* HDTip.m in Sources */,
 				F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */,

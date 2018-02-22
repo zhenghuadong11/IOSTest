@@ -23,8 +23,9 @@ static HDOperationQueue * queue;
 -(void)addAaynBlock:(void (^)(void))asynBlock afterMainBlock:(void (^)(void))mainBlock{
     
     NSBlockOperation * operation = [NSBlockOperation blockOperationWithBlock:^{
-        
-        asynBlock();
+        if (asynBlock != nil) {
+            asynBlock();
+        }
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             if (mainBlock != nil) {
                 mainBlock();

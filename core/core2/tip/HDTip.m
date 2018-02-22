@@ -8,6 +8,7 @@
 
 #import "HDTip.h"
 #import "HDTipVC.h"
+#import "HDDefine.h"
 #define IS_MORE_THAN(x) ([[[UIDevice currentDevice] systemVersion] floatValue] > x)
 #import <UIKit/UIKit.h>
 @implementation HDTip
@@ -94,6 +95,100 @@
     
 #endif
 }
+
+
++(void)tipHiddenWithText:(NSString *)text{
+    
+    UIView * tipView = [[UIView alloc] init];
+    UIView * tipBackView = [[UIView alloc] init];
+    UILabel * textLb = [[UILabel alloc] init];
+    
+    
+    [tipView addSubview:tipBackView];
+    [tipView addSubview:textLb];
+    
+    
+    
+    
+    textLb.text = text;
+    textLb.width = SCREEN_W * 4/5.0;
+    textLb.numberOfLines = 0;
+
+//    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSKernAttributeName:@(3)}];
+//    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+//    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [text length])];
+//    textLb.attributedText = attributedString;
+
+    tipBackView.backgroundColor = [UIColor blackColor];
+    tipBackView.alpha = 0.3;
+    
+    tipView.layer.cornerRadius = 10;
+    tipView.layer.masksToBounds = true;
+    tipView.alpha = 0;
+    
+    textLb.font = [UIFont systemFontOfSize:20];
+    
+    [textLb sizeToFit];
+    textLb.x = 10;
+    textLb.y = 5;
+    
+
+
+    
+    tipView.width = textLb.width + 20;
+    tipView.height = textLb.height + 10;
+    
+    tipView.x = (SCREEN_W - tipView.width)/2;
+    tipView.y = (SCREEN_H - tipView.height)/2;
+    
+    tipBackView.frame = tipView.bounds;
+    
+    [[UIApplication sharedApplication].keyWindow addSubview:tipView];
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        tipView.alpha = 1;
+    } completion:^(BOOL finished) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.5 animations:^{
+                tipView.alpha = 0;
+            } completion:^(BOOL finished) {
+                [tipView removeFromSuperview];
+            }];
+            
+            
+        });
+    }];
+
+
+    
+    
+}
+
+
+
+
+-(void)tipHUDWithText:(NSString *)text{
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    hud.label.text = text;
+    self.progressHUD = hud;
+}
+-(void)tipHUDHidden{
+    [self.progressHUD hideAnimated:true];
+}
+-(void) tipHUDCircle:(NSString *) text{
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    hud.mode = MBProgressHUDModeAnnularDeterminate;
+    hud.label.text = text;
+    self.progressHUD = hud;
+}
+-(void)setDetailText:(NSString *)detailText{
+    self.progressHUD.detailsLabel.text = detailText;
+}
+-(void)setProgress:(CGFloat)progress{
+    self.progressHUD.progress = progress;
+}
+
+
 
 + (NSArray<NSString *> *)actionUseNum: (NSString *)actionNum, ...NS_REQUIRES_NIL_TERMINATION{
     NSMutableArray *argsArray = [[NSMutableArray alloc] init];
