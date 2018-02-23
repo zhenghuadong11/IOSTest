@@ -173,7 +173,8 @@
 }
 
 
-+(void) setSpringAnimation:(CASpringAnimation *) springAni property:(HDAnimationModel *) property NS_AVAILABLE_IOS(9_0){
+//CA_CLASS_AVAILABLE (10.11, 9.0, 9.0, 2.0)
++(void) setSpringAnimation:(CASpringAnimation *) springAni property:(HDAnimationModel *) property{
     if (property == nil) {
         return;
     }

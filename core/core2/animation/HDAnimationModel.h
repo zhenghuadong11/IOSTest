@@ -23,11 +23,11 @@
  */
 @interface HDAnimationModel : NSObject
 
-@property(nonatomic,strong,nullable) id toValue;
-@property(nonatomic,strong,nullable) id fromValue;
+@property(nonatomic,strong) id toValue;
+@property(nonatomic,strong) id fromValue;
 @property(nonatomic,assign) CGFloat duration;
 @property(nonatomic,assign) NSInteger repeatCount;
-@property(nonatomic,strong,nullable) CAMediaTimingFunction * timingFunction;
+@property(nonatomic,strong) CAMediaTimingFunction * timingFunction;
 @property(nonatomic,assign) CGFloat beginTime;
 @property(nonatomic,assign) BOOL isNotReset;
 @property(nonatomic,assign) BOOL isReverse;
@@ -40,12 +40,12 @@
 /*
  *   用于base和帧动画
  */
-@property(nonatomic,copy,nullable) NSString * keyPath;
+@property(nonatomic,copy) NSString * keyPath;
 /**
    面向帧动画的,这两个设置了其中一个，默认是帧动画
  */
-@property(nonatomic,copy,nullable) NSArray * values;
-@property(nonatomic,assign,nullable)  CGPathRef path;
+@property(nonatomic,copy) NSArray * values;
+@property(nonatomic,assign)  CGPathRef path;
 
 /**
  spring弹性动画,ios 9之后才能支持

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10B6DCE203FF9BC00AEF664 /* UIColor+RGB解释.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DC3203FF9BC00AEF664 /* UIColor+RGB解释.pages */; };
+		F10B6DCF203FF9BC00AEF664 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DC4203FF9BC00AEF664 /* UIColor+RGB.m */; };
+		F10B6DD0203FF9BC00AEF664 /* UIView+FRAME_SET.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DC6203FF9BC00AEF664 /* UIView+FRAME_SET.m */; };
+		F10B6DD1203FF9BC00AEF664 /* frame.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DC8203FF9BC00AEF664 /* frame.pages */; };
+		F10B6DD2203FF9BC00AEF664 /* UIFont+PxToSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DCA203FF9BC00AEF664 /* UIFont+PxToSize.m */; };
+		F10B6DD3203FF9BC00AEF664 /* font.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DCB203FF9BC00AEF664 /* font.pages */; };
+		F10B6DD4203FF9BC00AEF664 /* HDDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DCD203FF9BC00AEF664 /* HDDefault.m */; };
 		F114262D202F38A6000D6ACA /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F114262B202F38A6000D6ACA /* DateViewController.m */; };
 		F114262E202F38A6000D6ACA /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F114262C202F38A6000D6ACA /* DateViewController.xib */; };
 		F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142630202F3A70000D6ACA /* NSDate+Time.m */; };
@@ -53,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10B6DBF203FF9BC00AEF664 /* HDDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDDefault.h; sourceTree = "<group>"; };
+		F10B6DC2203FF9BC00AEF664 /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		F10B6DC3203FF9BC00AEF664 /* UIColor+RGB解释.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIColor+RGB解释.pages"; sourceTree = "<group>"; };
+		F10B6DC4203FF9BC00AEF664 /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		F10B6DC6203FF9BC00AEF664 /* UIView+FRAME_SET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME_SET.m"; sourceTree = "<group>"; };
+		F10B6DC7203FF9BC00AEF664 /* UIView+FRAME_SET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FRAME_SET.h"; sourceTree = "<group>"; };
+		F10B6DC8203FF9BC00AEF664 /* frame.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = frame.pages; sourceTree = "<group>"; };
+		F10B6DCA203FF9BC00AEF664 /* UIFont+PxToSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PxToSize.m"; sourceTree = "<group>"; };
+		F10B6DCB203FF9BC00AEF664 /* font.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.pages; sourceTree = "<group>"; };
+		F10B6DCC203FF9BC00AEF664 /* UIFont+PxToSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PxToSize.h"; sourceTree = "<group>"; };
+		F10B6DCD203FF9BC00AEF664 /* HDDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDefault.m; sourceTree = "<group>"; };
 		F114262A202F38A6000D6ACA /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		F114262B202F38A6000D6ACA /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		F114262C202F38A6000D6ACA /* DateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
@@ -129,6 +147,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10B6DBE203FF9A100AEF664 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DC0203FF9BC00AEF664 /* core1 */,
+				F10B6DBF203FF9BC00AEF664 /* HDDefault.h */,
+				F10B6DCD203FF9BC00AEF664 /* HDDefault.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F10B6DC0203FF9BC00AEF664 /* core1 */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DC1203FF9BC00AEF664 /* color */,
+				F10B6DC5203FF9BC00AEF664 /* frame */,
+				F10B6DC9203FF9BC00AEF664 /* font */,
+			);
+			path = core1;
+			sourceTree = "<group>";
+		};
+		F10B6DC1203FF9BC00AEF664 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DC2203FF9BC00AEF664 /* UIColor+RGB.h */,
+				F10B6DC3203FF9BC00AEF664 /* UIColor+RGB解释.pages */,
+				F10B6DC4203FF9BC00AEF664 /* UIColor+RGB.m */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		F10B6DC5203FF9BC00AEF664 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DC6203FF9BC00AEF664 /* UIView+FRAME_SET.m */,
+				F10B6DC7203FF9BC00AEF664 /* UIView+FRAME_SET.h */,
+				F10B6DC8203FF9BC00AEF664 /* frame.pages */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		F10B6DC9203FF9BC00AEF664 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DCA203FF9BC00AEF664 /* UIFont+PxToSize.m */,
+				F10B6DCB203FF9BC00AEF664 /* font.pages */,
+				F10B6DCC203FF9BC00AEF664 /* UIFont+PxToSize.h */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		F1142629202F3862000D6ACA /* DateUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +324,7 @@
 		F1FC141D202753B000CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F10B6DBE203FF9A100AEF664 /* lib */,
 				F1E8A086203F0EDE00410AD7 /* animation */,
 				F12AEAC820347C750028C01C /* valite */,
 				F12AEAC42033F66A0028C01C /* object */,
@@ -397,7 +466,10 @@
 				F1FC13F82027536B00CA169D /* LaunchScreen.storyboard in Resources */,
 				F1E8A088203F0EDE00410AD7 /* animation.pages in Resources */,
 				F169A90F2028B1E90036805F /* NullViewController.xib in Resources */,
+				F10B6DCE203FF9BC00AEF664 /* UIColor+RGB解释.pages in Resources */,
+				F10B6DD1203FF9BC00AEF664 /* frame.pages in Resources */,
 				F1FC13F52027536B00CA169D /* Assets.xcassets in Resources */,
+				F10B6DD3203FF9BC00AEF664 /* font.pages in Resources */,
 				F1FC13F32027536B00CA169D /* Main.storyboard in Resources */,
 				F114262E202F38A6000D6ACA /* DateViewController.xib in Resources */,
 			);
@@ -425,11 +497,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FC1424202755C200CA169D /* KeyBoardHeihgtViewController.m in Sources */,
+				F10B6DD2203FF9BC00AEF664 /* UIFont+PxToSize.m in Sources */,
+				F10B6DCF203FF9BC00AEF664 /* UIColor+RGB.m in Sources */,
 				F1FC13F02027536B00CA169D /* ViewController.m in Sources */,
 				F114262D202F38A6000D6ACA /* DateViewController.m in Sources */,
 				F1FC14202027542100CA169D /* HDShowViewController.m in Sources */,
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
 				F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */,
+				F10B6DD0203FF9BC00AEF664 /* UIView+FRAME_SET.m in Sources */,
+				F10B6DD4203FF9BC00AEF664 /* HDDefault.m in Sources */,
 				F1E8A08B203F0F5E00410AD7 /* HDAnimationUtil.m in Sources */,
 				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
 				F12AEACB20347C860028C01C /* HDValite.m in Sources */,
@@ -607,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J5PB96A9M;
 				INFOPLIST_FILE = HDUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.HDUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -621,6 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J5PB96A9M;
 				INFOPLIST_FILE = HDUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.HDUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
