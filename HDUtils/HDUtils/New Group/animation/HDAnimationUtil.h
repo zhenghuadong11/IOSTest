@@ -18,7 +18,7 @@
  @param keyPath 动画的属性，一般是layer的属性都支持。具体查阅网站
  @param toValue 变成的值
  */
-+(void) animationView:(UIView *) view keyPath:(NSString *)keyPath toValue:(id)toValue;
++(void) animationWithBaseView:(UIView *) view keyPath:(NSString *)keyPath toValue:(id)toValue;
 
 /**
  复杂的动画
@@ -36,7 +36,31 @@
  7、isReset        //是否还原
  8、isReverse      //是否反转
  */
-+(void) animationView:(UIView *) view keyPath:(NSString *)keyPath property:(HDAnimationModel *)property;
++(void) animationWithBaseView:(UIView *) view keyPath:(NSString *)keyPath property:(HDAnimationModel *)property;
+
+
+
+/**
+ 点的帧动画
+
+ @param view 动画的view
+ @param keyPath  动画的属性，一般是layer的属性都支持。具体查阅网站
+ @param values   点的集合
+ @param property 动画属性的集合
+ */
++(void) animationWithKeyFrameView:(UIView *) view keyPath:(NSString *)keyPath values:(NSArray *)values property:(HDAnimationModel *)property;;
+
+/**
+ path的帧动画
+
+ @param view 动画的view
+ @param keyPath 动画的属性，一般是layer的属性都支持。具体查阅网站
+ @param path 路线
+ @param property 动画属性的集合
+ */
++(void) animationWithKeyFrameView:(UIView *) view keyPath:(NSString *)keyPath path:(CGPathRef)path property:(HDAnimationModel *)property;
+
+
 
 /*
  常用keypath，一般来说都是layer的属性

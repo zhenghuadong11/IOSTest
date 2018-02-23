@@ -32,7 +32,7 @@
     model.duration = 2.5;
     model.repeatCount = 100;
     model.isReverse = true;
-    [HDAnimationUtil animationView:button keyPath:@"bounds.size" property:model];
+    [HDAnimationUtil animationWithBaseView:button keyPath:@"bounds.size" property:model];
 }
 
 - (void)didReceiveMemoryWarning {

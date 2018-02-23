@@ -9,7 +9,7 @@
 #import "HDAnimationUtil.h"
 
 @implementation HDAnimationUtil
-+(void) animationView:(UIView *) view keyPath:(NSString *)keyPath toValue:(id)toValue{
++(void) animationWithBaseView:(UIView *) view keyPath:(NSString *)keyPath toValue:(id)toValue{
     CABasicAnimation * ani = [CABasicAnimation animationWithKeyPath:keyPath];
     ani.toValue = toValue;
     [view.layer addAnimation:ani forKey:nil];
@@ -34,15 +34,42 @@
 
 @property(getter=isCumulative) BOOL cumulative;
  */
-+(void)animationView:(UIView *)view keyPath:(NSString *)keyPath property:(HDAnimationModel *)property{
++(void)animationWithBaseView:(UIView *)view keyPath:(NSString *)keyPath property:(HDAnimationModel *)property{
     CABasicAnimation * ani = [CABasicAnimation animationWithKeyPath:keyPath];
-    if (property.toValue == nil) {
+    if (property == nil || property.toValue == nil) {
         //toValue都没有就不进行动画了
         return;
     }
     ani.toValue = property.toValue;
     if (property.fromValue != nil) {
         ani.fromValue = property.fromValue;
+    }
+
+    [self setAnimation:ani property:property];
+//     ani.fillMode = kCAFillModeBackwards;
+//    ani.cumulative = true;  这个属性会在原本的基础上变化
+//    ani.additive = true;    这个属性会在结束的基础上变化
+    [view.layer addAnimation:ani forKey:nil];
+}
++(void)animationWithKeyFrameView:(UIView *)view keyPath:(NSString *)keyPath values:(NSArray *)values property:(HDAnimationModel *)property{
+    CAKeyframeAnimation * keyAni = [CAKeyframeAnimation animationWithKeyPath:keyPath];
+    
+    keyAni.values = values;
+    [self setAnimation:keyAni property:property];
+    
+    [view.layer addAnimation:keyAni forKey:nil];
+}
++(void)animationWithKeyFrameView:(UIView *)view keyPath:(NSString *)keyPath path:(CGPathRef)path property:(HDAnimationModel *)property{
+    CAKeyframeAnimation * keyAni = [CAKeyframeAnimation animationWithKeyPath:keyPath];
+    
+    keyAni.path = path;
+    [self setAnimation:keyAni property:property];
+    
+    [view.layer addAnimation:keyAni forKey:nil];
+}
++(void) setAnimation:(CAAnimation *) ani property:(HDAnimationModel *) property{
+    if (property == nil) {
+        return;
     }
     if (property.duration != 0) {
         ani.duration = property.duration;
@@ -63,9 +90,5 @@
     if (property.isReverse == true) {
         ani.autoreverses = property.isReverse;
     }
-//     ani.fillMode = kCAFillModeBackwards;
-//    ani.cumulative = true;
-//    ani.additive = true;
-    [view.layer addAnimation:ani forKey:nil];
 }
 @end
