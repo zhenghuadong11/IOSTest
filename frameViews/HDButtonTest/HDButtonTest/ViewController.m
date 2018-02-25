@@ -28,9 +28,14 @@
     button.view.frame = button.bounds;
     button.view.backgroundColor = [UIColor redColor];
     
-    button.imageView.frame = CGRectMake(0, 0, 50, 50);
+    
     button.imageView.imageUrl = @"http://img95.699pic.com/photo/50069/5951.jpg_wh300.jpg";
 // https://www.jianshu.com/p/2dc061e5ea18?utm_campaign=maleskine&utm_content=note&utm_medium=pc_all_hots&utm_source=recommendation
+    button.imageView.frame = CGRectMake(0, 0, 100, 100);
+    __weak HDButton * weakButton = button;
+    button.selfBlock = ^{
+        weakButton.imageView.frame = CGRectMake(0, 0, 50, 50);
+    };
 }
 -(void) test1{
     HDButton * button = [[HDButton alloc] init];

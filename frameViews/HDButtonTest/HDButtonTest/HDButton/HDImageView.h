@@ -21,5 +21,7 @@ typedef enum {
 @property(nonatomic,copy) NSString * imageUrl;
 @property(nonatomic,assign) CGFloat maxImageWidth;
 @property(nonatomic,assign) CGFloat maxImageHeight;
+
+//-(void) sizeForImage;
 //@property(nonatomic,strong) ;
 @end

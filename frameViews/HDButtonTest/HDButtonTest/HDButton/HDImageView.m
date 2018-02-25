@@ -10,6 +10,10 @@
 #import "HDDefault.h"
 #import "NSString+Normal.h"
 @implementation HDImageView
+{
+    BOOL _isNotNeedfitSize;
+    
+}
 #pragma mark --  调整ImageView的size，防止图片变形
 -(void)setImage:(UIImage *)image{
     [super setImage:image];
@@ -43,6 +47,7 @@
         if (self.maxImageHeight == 0) {
             self.maxImageHeight = self.height;
         }
+        
         if (self.width > self.maxImageWidth) {
             self.width = self.maxImageWidth;
             self.height = self.image.size.height * self.width / self.image.size.width;
@@ -63,10 +68,16 @@
     [self sizeForImage];
 }
 
-//-(void)setFrame:(CGRect)frame{
-//    [super setFrame:frame];
-//    [self sizeForImage];
-//}
+-(void)setFrame:(CGRect)frame{
+    [super setFrame:frame];
+    if (_isNotNeedfitSize == false) {
+        _isNotNeedfitSize = true;
+        [self sizeForImage];
+        _isNotNeedfitSize = false;
+    }
+    
+}
+
 -(void)setImageSizeStyle:(HDImageViewImageSizeStyle)imageSizeStyle{
     _imageSizeStyle = imageSizeStyle;
     [self sizeForImage];
