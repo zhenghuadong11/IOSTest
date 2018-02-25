@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10B6DE320401B0600AEF664 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DE220401B0600AEF664 /* AppDelegate.m */; };
+		F10B6DE620401B0600AEF664 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DE520401B0600AEF664 /* ViewController.m */; };
+		F10B6DE920401B0600AEF664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DE720401B0600AEF664 /* Main.storyboard */; };
+		F10B6DEB20401B0600AEF664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DEA20401B0600AEF664 /* Assets.xcassets */; };
+		F10B6DEE20401B0600AEF664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B6DEC20401B0600AEF664 /* LaunchScreen.storyboard */; };
+		F10B6DF120401B0600AEF664 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DF020401B0600AEF664 /* main.m */; };
+		F10B6DFB20401B0600AEF664 /* PassWordViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6DFA20401B0600AEF664 /* PassWordViewTestTests.m */; };
+		F10B6E0620401B0600AEF664 /* PassWordViewTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E0520401B0600AEF664 /* PassWordViewTestUITests.m */; };
+		F10B6E2920401B7500AEF664 /* HDAnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E1520401B7400AEF664 /* HDAnimationUtil.m */; };
+		F10B6E2A20401B7500AEF664 /* animation.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6E1720401B7400AEF664 /* animation.pages */; };
+		F10B6E2B20401B7500AEF664 /* HDAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E1920401B7400AEF664 /* HDAnimationModel.m */; };
+		F10B6E2C20401B7500AEF664 /* UIColor+RGB解释.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6E1E20401B7500AEF664 /* UIColor+RGB解释.pages */; };
+		F10B6E2D20401B7500AEF664 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E1F20401B7500AEF664 /* UIColor+RGB.m */; };
+		F10B6E2E20401B7500AEF664 /* UIView+FRAME_SET.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E2120401B7500AEF664 /* UIView+FRAME_SET.m */; };
+		F10B6E2F20401B7500AEF664 /* frame.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6E2320401B7500AEF664 /* frame.pages */; };
+		F10B6E3020401B7500AEF664 /* UIFont+PxToSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E2520401B7500AEF664 /* UIFont+PxToSize.m */; };
+		F10B6E3120401B7500AEF664 /* font.pages in Resources */ = {isa = PBXBuildFile; fileRef = F10B6E2620401B7500AEF664 /* font.pages */; };
+		F10B6E3220401B7500AEF664 /* HDDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E2820401B7500AEF664 /* HDDefault.m */; };
+		F10B6E3620401C2300AEF664 /* HDPassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E3520401C2300AEF664 /* HDPassWordView.m */; };
+		F10B6E3A20403B8400AEF664 /* HDValite.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B6E3820403B8400AEF664 /* HDValite.m */; };
+		F1A094E22040F2A80008384F /* HDKeyBoardHeightUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A094E02040F2A80008384F /* HDKeyBoardHeightUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F10B6DF720401B0600AEF664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10B6DD620401B0600AEF664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F10B6DDD20401B0600AEF664;
+			remoteInfo = PassWordViewTest;
+		};
+		F10B6E0220401B0600AEF664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10B6DD620401B0600AEF664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F10B6DDD20401B0600AEF664;
+			remoteInfo = PassWordViewTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10B6DDE20401B0600AEF664 /* PassWordViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassWordViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10B6DE120401B0600AEF664 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F10B6DE220401B0600AEF664 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F10B6DE420401B0600AEF664 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F10B6DE520401B0600AEF664 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F10B6DE820401B0600AEF664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F10B6DEA20401B0600AEF664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10B6DED20401B0600AEF664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F10B6DEF20401B0600AEF664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F10B6DF020401B0600AEF664 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F10B6DF620401B0600AEF664 /* PassWordViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassWordViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10B6DFA20401B0600AEF664 /* PassWordViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassWordViewTestTests.m; sourceTree = "<group>"; };
+		F10B6DFC20401B0600AEF664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F10B6E0120401B0600AEF664 /* PassWordViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassWordViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10B6E0520401B0600AEF664 /* PassWordViewTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassWordViewTestUITests.m; sourceTree = "<group>"; };
+		F10B6E0720401B0600AEF664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F10B6E1520401B7400AEF664 /* HDAnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAnimationUtil.m; sourceTree = "<group>"; };
+		F10B6E1620401B7400AEF664 /* HDAnimationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAnimationModel.h; sourceTree = "<group>"; };
+		F10B6E1720401B7400AEF664 /* animation.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = animation.pages; sourceTree = "<group>"; };
+		F10B6E1820401B7400AEF664 /* HDAnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAnimationUtil.h; sourceTree = "<group>"; };
+		F10B6E1920401B7400AEF664 /* HDAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAnimationModel.m; sourceTree = "<group>"; };
+		F10B6E1A20401B7500AEF664 /* HDDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDDefault.h; sourceTree = "<group>"; };
+		F10B6E1D20401B7500AEF664 /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		F10B6E1E20401B7500AEF664 /* UIColor+RGB解释.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UIColor+RGB解释.pages"; sourceTree = "<group>"; };
+		F10B6E1F20401B7500AEF664 /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		F10B6E2120401B7500AEF664 /* UIView+FRAME_SET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME_SET.m"; sourceTree = "<group>"; };
+		F10B6E2220401B7500AEF664 /* UIView+FRAME_SET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FRAME_SET.h"; sourceTree = "<group>"; };
+		F10B6E2320401B7500AEF664 /* frame.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = frame.pages; sourceTree = "<group>"; };
+		F10B6E2520401B7500AEF664 /* UIFont+PxToSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PxToSize.m"; sourceTree = "<group>"; };
+		F10B6E2620401B7500AEF664 /* font.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.pages; sourceTree = "<group>"; };
+		F10B6E2720401B7500AEF664 /* UIFont+PxToSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PxToSize.h"; sourceTree = "<group>"; };
+		F10B6E2820401B7500AEF664 /* HDDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDefault.m; sourceTree = "<group>"; };
+		F10B6E3420401C2300AEF664 /* HDPassWordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPassWordView.h; sourceTree = "<group>"; };
+		F10B6E3520401C2300AEF664 /* HDPassWordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPassWordView.m; sourceTree = "<group>"; };
+		F10B6E3820403B8400AEF664 /* HDValite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDValite.m; sourceTree = "<group>"; };
+		F10B6E3920403B8400AEF664 /* HDValite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDValite.h; sourceTree = "<group>"; };
+		F1A094E02040F2A80008384F /* HDKeyBoardHeightUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDKeyBoardHeightUtil.m; sourceTree = "<group>"; };
+		F1A094E12040F2A80008384F /* HDKeyBoardHeightUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDKeyBoardHeightUtil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10B6DDB20401B0600AEF664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DF320401B0600AEF664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DFE20401B0600AEF664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10B6DD520401B0600AEF664 = {
+			isa = PBXGroup;
+			children = (
+				F10B6DE020401B0600AEF664 /* PassWordViewTest */,
+				F10B6DF920401B0600AEF664 /* PassWordViewTestTests */,
+				F10B6E0420401B0600AEF664 /* PassWordViewTestUITests */,
+				F10B6DDF20401B0600AEF664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F10B6DDF20401B0600AEF664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DDE20401B0600AEF664 /* PassWordViewTest.app */,
+				F10B6DF620401B0600AEF664 /* PassWordViewTestTests.xctest */,
+				F10B6E0120401B0600AEF664 /* PassWordViewTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F10B6DE020401B0600AEF664 /* PassWordViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E3320401B7900AEF664 /* passwordView */,
+				F10B6E1320401B1F00AEF664 /* lib */,
+				F10B6DE120401B0600AEF664 /* AppDelegate.h */,
+				F10B6DE220401B0600AEF664 /* AppDelegate.m */,
+				F10B6DE420401B0600AEF664 /* ViewController.h */,
+				F10B6DE520401B0600AEF664 /* ViewController.m */,
+				F10B6DE720401B0600AEF664 /* Main.storyboard */,
+				F10B6DEA20401B0600AEF664 /* Assets.xcassets */,
+				F10B6DEC20401B0600AEF664 /* LaunchScreen.storyboard */,
+				F10B6DEF20401B0600AEF664 /* Info.plist */,
+				F10B6DF020401B0600AEF664 /* main.m */,
+			);
+			path = PassWordViewTest;
+			sourceTree = "<group>";
+		};
+		F10B6DF920401B0600AEF664 /* PassWordViewTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6DFA20401B0600AEF664 /* PassWordViewTestTests.m */,
+				F10B6DFC20401B0600AEF664 /* Info.plist */,
+			);
+			path = PassWordViewTestTests;
+			sourceTree = "<group>";
+		};
+		F10B6E0420401B0600AEF664 /* PassWordViewTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E0520401B0600AEF664 /* PassWordViewTestUITests.m */,
+				F10B6E0720401B0600AEF664 /* Info.plist */,
+			);
+			path = PassWordViewTestUITests;
+			sourceTree = "<group>";
+		};
+		F10B6E1320401B1F00AEF664 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F1A094DF2040F2990008384F /* util */,
+				F10B6E3720403B8400AEF664 /* valite */,
+				F10B6E1420401B7400AEF664 /* animation */,
+				F10B6E1B20401B7500AEF664 /* core1 */,
+				F10B6E1A20401B7500AEF664 /* HDDefault.h */,
+				F10B6E2820401B7500AEF664 /* HDDefault.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F10B6E1420401B7400AEF664 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E1520401B7400AEF664 /* HDAnimationUtil.m */,
+				F10B6E1620401B7400AEF664 /* HDAnimationModel.h */,
+				F10B6E1720401B7400AEF664 /* animation.pages */,
+				F10B6E1820401B7400AEF664 /* HDAnimationUtil.h */,
+				F10B6E1920401B7400AEF664 /* HDAnimationModel.m */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		F10B6E1B20401B7500AEF664 /* core1 */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E1C20401B7500AEF664 /* color */,
+				F10B6E2020401B7500AEF664 /* frame */,
+				F10B6E2420401B7500AEF664 /* font */,
+			);
+			path = core1;
+			sourceTree = "<group>";
+		};
+		F10B6E1C20401B7500AEF664 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E1D20401B7500AEF664 /* UIColor+RGB.h */,
+				F10B6E1E20401B7500AEF664 /* UIColor+RGB解释.pages */,
+				F10B6E1F20401B7500AEF664 /* UIColor+RGB.m */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		F10B6E2020401B7500AEF664 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E2120401B7500AEF664 /* UIView+FRAME_SET.m */,
+				F10B6E2220401B7500AEF664 /* UIView+FRAME_SET.h */,
+				F10B6E2320401B7500AEF664 /* frame.pages */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		F10B6E2420401B7500AEF664 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E2520401B7500AEF664 /* UIFont+PxToSize.m */,
+				F10B6E2620401B7500AEF664 /* font.pages */,
+				F10B6E2720401B7500AEF664 /* UIFont+PxToSize.h */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		F10B6E3320401B7900AEF664 /* passwordView */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E3420401C2300AEF664 /* HDPassWordView.h */,
+				F10B6E3520401C2300AEF664 /* HDPassWordView.m */,
+			);
+			path = passwordView;
+			sourceTree = "<group>";
+		};
+		F10B6E3720403B8400AEF664 /* valite */ = {
+			isa = PBXGroup;
+			children = (
+				F10B6E3820403B8400AEF664 /* HDValite.m */,
+				F10B6E3920403B8400AEF664 /* HDValite.h */,
+			);
+			path = valite;
+			sourceTree = "<group>";
+		};
+		F1A094DF2040F2990008384F /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F1A094E12040F2A80008384F /* HDKeyBoardHeightUtil.h */,
+				F1A094E02040F2A80008384F /* HDKeyBoardHeightUtil.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10B6DDD20401B0600AEF664 /* PassWordViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10B6E0A20401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTest" */;
+			buildPhases = (
+				F10B6DDA20401B0600AEF664 /* Sources */,
+				F10B6DDB20401B0600AEF664 /* Frameworks */,
+				F10B6DDC20401B0600AEF664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassWordViewTest;
+			productName = PassWordViewTest;
+			productReference = F10B6DDE20401B0600AEF664 /* PassWordViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F10B6DF520401B0600AEF664 /* PassWordViewTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10B6E0D20401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTestTests" */;
+			buildPhases = (
+				F10B6DF220401B0600AEF664 /* Sources */,
+				F10B6DF320401B0600AEF664 /* Frameworks */,
+				F10B6DF420401B0600AEF664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F10B6DF820401B0600AEF664 /* PBXTargetDependency */,
+			);
+			name = PassWordViewTestTests;
+			productName = PassWordViewTestTests;
+			productReference = F10B6DF620401B0600AEF664 /* PassWordViewTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F10B6E0020401B0600AEF664 /* PassWordViewTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10B6E1020401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTestUITests" */;
+			buildPhases = (
+				F10B6DFD20401B0600AEF664 /* Sources */,
+				F10B6DFE20401B0600AEF664 /* Frameworks */,
+				F10B6DFF20401B0600AEF664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F10B6E0320401B0600AEF664 /* PBXTargetDependency */,
+			);
+			name = PassWordViewTestUITests;
+			productName = PassWordViewTestUITests;
+			productReference = F10B6E0120401B0600AEF664 /* PassWordViewTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10B6DD620401B0600AEF664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "郑华栋";
+				TargetAttributes = {
+					F10B6DDD20401B0600AEF664 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F10B6DF520401B0600AEF664 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F10B6DDD20401B0600AEF664;
+					};
+					F10B6E0020401B0600AEF664 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F10B6DDD20401B0600AEF664;
+					};
+				};
+			};
+			buildConfigurationList = F10B6DD920401B0600AEF664 /* Build configuration list for PBXProject "PassWordViewTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F10B6DD520401B0600AEF664;
+			productRefGroup = F10B6DDF20401B0600AEF664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10B6DDD20401B0600AEF664 /* PassWordViewTest */,
+				F10B6DF520401B0600AEF664 /* PassWordViewTestTests */,
+				F10B6E0020401B0600AEF664 /* PassWordViewTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F10B6DDC20401B0600AEF664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10B6DEE20401B0600AEF664 /* LaunchScreen.storyboard in Resources */,
+				F10B6E2A20401B7500AEF664 /* animation.pages in Resources */,
+				F10B6DEB20401B0600AEF664 /* Assets.xcassets in Resources */,
+				F10B6E2C20401B7500AEF664 /* UIColor+RGB解释.pages in Resources */,
+				F10B6E2F20401B7500AEF664 /* frame.pages in Resources */,
+				F10B6DE920401B0600AEF664 /* Main.storyboard in Resources */,
+				F10B6E3120401B7500AEF664 /* font.pages in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DF420401B0600AEF664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DFF20401B0600AEF664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10B6DDA20401B0600AEF664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10B6DE620401B0600AEF664 /* ViewController.m in Sources */,
+				F10B6E3220401B7500AEF664 /* HDDefault.m in Sources */,
+				F10B6E2D20401B7500AEF664 /* UIColor+RGB.m in Sources */,
+				F10B6E3620401C2300AEF664 /* HDPassWordView.m in Sources */,
+				F10B6E3020401B7500AEF664 /* UIFont+PxToSize.m in Sources */,
+				F1A094E22040F2A80008384F /* HDKeyBoardHeightUtil.m in Sources */,
+				F10B6DF120401B0600AEF664 /* main.m in Sources */,
+				F10B6E2920401B7500AEF664 /* HDAnimationUtil.m in Sources */,
+				F10B6E2E20401B7500AEF664 /* UIView+FRAME_SET.m in Sources */,
+				F10B6E3A20403B8400AEF664 /* HDValite.m in Sources */,
+				F10B6E2B20401B7500AEF664 /* HDAnimationModel.m in Sources */,
+				F10B6DE320401B0600AEF664 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DF220401B0600AEF664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10B6DFB20401B0600AEF664 /* PassWordViewTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10B6DFD20401B0600AEF664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10B6E0620401B0600AEF664 /* PassWordViewTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F10B6DF820401B0600AEF664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10B6DDD20401B0600AEF664 /* PassWordViewTest */;
+			targetProxy = F10B6DF720401B0600AEF664 /* PBXContainerItemProxy */;
+		};
+		F10B6E0320401B0600AEF664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10B6DDD20401B0600AEF664 /* PassWordViewTest */;
+			targetProxy = F10B6E0220401B0600AEF664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F10B6DE720401B0600AEF664 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F10B6DE820401B0600AEF664 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F10B6DEC20401B0600AEF664 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F10B6DED20401B0600AEF664 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F10B6E0820401B0600AEF664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F10B6E0920401B0600AEF664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F10B6E0B20401B0600AEF664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F10B6E0C20401B0600AEF664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F10B6E0E20401B0600AEF664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassWordViewTest.app/PassWordViewTest";
+			};
+			name = Debug;
+		};
+		F10B6E0F20401B0600AEF664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassWordViewTest.app/PassWordViewTest";
+			};
+			name = Release;
+		};
+		F10B6E1120401B0600AEF664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassWordViewTest;
+			};
+			name = Debug;
+		};
+		F10B6E1220401B0600AEF664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J5PB96A9M;
+				INFOPLIST_FILE = PassWordViewTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhd.PassWordViewTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassWordViewTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10B6DD920401B0600AEF664 /* Build configuration list for PBXProject "PassWordViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10B6E0820401B0600AEF664 /* Debug */,
+				F10B6E0920401B0600AEF664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10B6E0A20401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10B6E0B20401B0600AEF664 /* Debug */,
+				F10B6E0C20401B0600AEF664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10B6E0D20401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10B6E0E20401B0600AEF664 /* Debug */,
+				F10B6E0F20401B0600AEF664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10B6E1020401B0600AEF664 /* Build configuration list for PBXNativeTarget "PassWordViewTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10B6E1120401B0600AEF664 /* Debug */,
+				F10B6E1220401B0600AEF664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F10B6DD620401B0600AEF664 /* Project object */;
+}

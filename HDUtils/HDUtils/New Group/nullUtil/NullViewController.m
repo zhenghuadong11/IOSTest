@@ -29,7 +29,7 @@
 }
 - (IBAction)login:(id)sender {
     NSObject * obj = nil;
-    if ([HDNullUtil checkNulltips:@[@"t1空",@"t2空",@"t3空",@"4空"] isStrict:false objects:_textField1.text,_tf2.text,_tf3.text,obj,nil]) {
+    if ([HDNullUtil checkNulltips:@[@"t1空",@"t2空",@"t3空",@"4空"] isStrict:false objects:_textField1.text,_tf2.text,_tf3.text,nil]) {
         return;
     }
 
@@ -37,12 +37,18 @@
 }
 - (IBAction)strictLogin:(id)sender {
     NSObject * obj = nil;
-    if ([HDNullUtil checkNulltips:@[@"t1空",@"t2空",@"t3空",@"4空"] isStrict:true objects:_textField1.text,_tf2.text,_tf3.text,obj,nil]) {
+    if ([HDNullUtil checkNulltips:@[@"t1空",@"t2空",@"t3空",@"4空"] isStrict:true objects:_textField1.text,_tf2.text,_tf3.text,obj]) {
         return;
     }
     
     [HDTip alertTipTitle:@"可以登陆" message:nil];
 }
+- (IBAction)nullNum:(id)sender {
+    NSLog(@"空的数量%ld",(long)[HDNullUtil numOfNullObjectIsStrict:false objects:nil,@"f",@"fad",nil,[NSNull null]]);
+    
+}
+
+
 //- (void)viewDidLoad {
 //    [super viewDidLoad];
 //

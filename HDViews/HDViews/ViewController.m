@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "RequestButtonViewController.h"
 #import "PullViewController.h"
+#import "THOrderViewController.h"
+#import "HDCollectionViewController1.h"
 //#import ""
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +38,7 @@
 }
 
 -(void) setDefault{
-    _models = @[@"请求按钮",@"下拉视图"];
+    _models = @[@"请求按钮",@"下拉视图",@"collectionView"];
 }
 -(void) setSubViews{
     _tableView = [[UITableView alloc] init];
@@ -69,11 +71,17 @@
         [self.navigationController pushViewController:vc animated:true];
         
         return;
+    }else if(indexPath.row == 0){
+        RequestButtonViewController * vc = [[RequestButtonViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+        return;
+    }else{
+        THOrderViewController * vc = [[THOrderViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
     }
     
     
-    RequestButtonViewController * vc = [[RequestButtonViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:true];
+
 }
 
 - (void)didReceiveMemoryWarning {

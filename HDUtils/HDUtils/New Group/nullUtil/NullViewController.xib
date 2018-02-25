@@ -80,8 +80,17 @@
                         <action selector="login:" destination="-1" eventType="touchUpInside" id="tac-cb-gs3"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH4-Qg-UQl">
+                    <rect key="frame" x="159" y="378" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="nullNum"/>
+                    <connections>
+                        <action selector="nullNum:" destination="-1" eventType="touchUpInside" id="Mid-hy-yZR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="-97" y="82"/>
         </view>
     </objects>
 </document>

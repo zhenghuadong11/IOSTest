@@ -12,7 +12,7 @@
 
 
 /**
- 判断是否对象为空
+ 判断是否对象为空,tips的数量，应该和object的一致，或者以nsNUll结尾
 
  @param objects 需要判断的对象的数组
  @param tips 为空时对应的提示
@@ -21,4 +21,17 @@
  */
 // - (void)list:(NSString *)string,...{
 +(BOOL) checkNulltips:(NSArray<NSString *> *) tips isStrict:(BOOL) isStrict objects:(NSObject *) object,...;
+
++(void) defaultValue:(NSArray<NSObject *> *) defaultValues isStrict:(BOOL) isStrict objects:(NSObject *) object,...;
+
++(void) defaultValue:(NSObject *) defaultValue isStrict:(BOOL) isStrict object:(NSObject *) object;
+
+/**
+ 获取空的数量，需要以【nsnull null】对象结尾。不太好用
+
+ @param isStrict <#isStrict description#>
+ @param object <#object description#>
+ @return <#return value description#>
+ */
++(NSInteger) numOfNullObjectIsStrict:(BOOL) isStrict objects:(NSObject *) object,...;
 @end

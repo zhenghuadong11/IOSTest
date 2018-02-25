@@ -21,7 +21,12 @@
 #define Layout_675_y(y) ((y)/675.0 * SCREEN_H/2)  //1350px 图片
 #define Rect_DEFAULT CGRectMake(x, y, width, height)
 
-
+/**
+ 生成弱引用
+ @param self self
+ @return 弱引用
+ */
+#define WEAK_SELFINIT typeof(self) weakSelf = self
 
 #define PIWithAngle(x) (x/180.0*M_PI_2 * 2)
 

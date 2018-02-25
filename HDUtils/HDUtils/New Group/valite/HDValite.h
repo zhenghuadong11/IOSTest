@@ -44,4 +44,20 @@
  @return 真假
  */
 +(BOOL) IsBankCard:(NSString *)cardNumber;
+
+/**
+ 是否是整数
+
+ @param string <#string description#>
+ @return <#return value description#>
+ */
++ (BOOL)isPureInt:(NSString*)string;
+
+/**
+ 是否是浮点数
+
+ @param string <#string description#>
+ @return <#return value description#>
+ */
++ (BOOL)isPureFloat:(NSString*)string;
 @end

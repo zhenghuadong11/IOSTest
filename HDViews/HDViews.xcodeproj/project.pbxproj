@@ -16,6 +16,17 @@
 		186A234C202BEDB200CDC63D /* frame.pages in Resources */ = {isa = PBXBuildFile; fileRef = 186A2344202BEDB200CDC63D /* frame.pages */; };
 		186A234D202BEDB200CDC63D /* UIView+FRAME_SET.m in Sources */ = {isa = PBXBuildFile; fileRef = 186A2346202BEDB200CDC63D /* UIView+FRAME_SET.m */; };
 		186A2350202BF6A600CDC63D /* PullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186A234F202BF6A600CDC63D /* PullViewController.m */; };
+		F1A0953B204104E50008384F /* HDConllectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0953A204104E50008384F /* HDConllectionView.m */; };
+		F1A0953E204106EF0008384F /* THOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0953D204106EF0008384F /* THOrderViewController.m */; };
+		F1A0954420410AD90008384F /* HDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0954320410AD90008384F /* HDCollectionViewCell.m */; };
+		F1A095472041308B0008384F /* HDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A095462041308B0008384F /* HDCollectionReusableView.m */; };
+		F1A0954A204149060008384F /* HDClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A09549204149060008384F /* HDClickButton.m */; };
+		F1A0954D20414B360008384F /* THOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0954C20414B360008384F /* THOrderModel.m */; };
+		F1A0955220414BBF0008384F /* Model.pages in Resources */ = {isa = PBXBuildFile; fileRef = F1A0954F20414BBF0008384F /* Model.pages */; };
+		F1A0955320414BBF0008384F /* HDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0955120414BBF0008384F /* HDModel.m */; };
+		F1A0955720415F660008384F /* THOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A0955620415F660008384F /* THOrderHeaderView.xib */; };
+		F1A0955A2041617D0008384F /* HDCollectionViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A095592041617D0008384F /* HDCollectionViewController1.m */; };
+		F1A0955D2041660C0008384F /* THOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0955C2041660C0008384F /* THOrderHeaderView.m */; };
 		F1FC13A6202747DF00CA169D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13A5202747DF00CA169D /* AppDelegate.m */; };
 		F1FC13A9202747DF00CA169D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC13A8202747DF00CA169D /* ViewController.m */; };
 		F1FC13AC202747DF00CA169D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FC13AA202747DF00CA169D /* Main.storyboard */; };
@@ -61,6 +72,26 @@
 		186A2346202BEDB200CDC63D /* UIView+FRAME_SET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME_SET.m"; sourceTree = "<group>"; };
 		186A234E202BF6A600CDC63D /* PullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullViewController.h; sourceTree = "<group>"; };
 		186A234F202BF6A600CDC63D /* PullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullViewController.m; sourceTree = "<group>"; };
+		F1A09539204104E50008384F /* HDConllectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDConllectionView.h; sourceTree = "<group>"; };
+		F1A0953A204104E50008384F /* HDConllectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDConllectionView.m; sourceTree = "<group>"; };
+		F1A0953C204106EF0008384F /* THOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THOrderViewController.h; sourceTree = "<group>"; };
+		F1A0953D204106EF0008384F /* THOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THOrderViewController.m; sourceTree = "<group>"; };
+		F1A0954220410AD90008384F /* HDCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCollectionViewCell.h; sourceTree = "<group>"; };
+		F1A0954320410AD90008384F /* HDCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCollectionViewCell.m; sourceTree = "<group>"; };
+		F1A095452041308B0008384F /* HDCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCollectionReusableView.h; sourceTree = "<group>"; };
+		F1A095462041308B0008384F /* HDCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCollectionReusableView.m; sourceTree = "<group>"; };
+		F1A09548204149060008384F /* HDClickButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDClickButton.h; sourceTree = "<group>"; };
+		F1A09549204149060008384F /* HDClickButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDClickButton.m; sourceTree = "<group>"; };
+		F1A0954B20414B360008384F /* THOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THOrderModel.h; sourceTree = "<group>"; };
+		F1A0954C20414B360008384F /* THOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THOrderModel.m; sourceTree = "<group>"; };
+		F1A0954F20414BBF0008384F /* Model.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Model.pages; sourceTree = "<group>"; };
+		F1A0955020414BBF0008384F /* HDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDModel.h; sourceTree = "<group>"; };
+		F1A0955120414BBF0008384F /* HDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDModel.m; sourceTree = "<group>"; };
+		F1A0955620415F660008384F /* THOrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THOrderHeaderView.xib; sourceTree = "<group>"; };
+		F1A095582041617D0008384F /* HDCollectionViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCollectionViewController1.h; sourceTree = "<group>"; };
+		F1A095592041617D0008384F /* HDCollectionViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCollectionViewController1.m; sourceTree = "<group>"; };
+		F1A0955B2041660C0008384F /* THOrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THOrderHeaderView.h; sourceTree = "<group>"; };
+		F1A0955C2041660C0008384F /* THOrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THOrderHeaderView.m; sourceTree = "<group>"; };
 		F1FC13A1202747DF00CA169D /* HDViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FC13A4202747DF00CA169D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1FC13A5202747DF00CA169D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +153,7 @@
 		186A2337202BED9100CDC63D /* Mylib */ = {
 			isa = PBXGroup;
 			children = (
+				F1A0954E20414BBF0008384F /* model */,
 				186A233A202BEDB200CDC63D /* core1 */,
 				186A2339202BEDB200CDC63D /* HDDefault.h */,
 				186A2338202BEDB200CDC63D /* HDDefault.m */,
@@ -167,6 +199,40 @@
 				186A2346202BEDB200CDC63D /* UIView+FRAME_SET.m */,
 			);
 			path = frame;
+			sourceTree = "<group>";
+		};
+		F1A09538204104C30008384F /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F1A09539204104E50008384F /* HDConllectionView.h */,
+				F1A0953A204104E50008384F /* HDConllectionView.m */,
+				F1A0953C204106EF0008384F /* THOrderViewController.h */,
+				F1A0953D204106EF0008384F /* THOrderViewController.m */,
+				F1A0954220410AD90008384F /* HDCollectionViewCell.h */,
+				F1A0954320410AD90008384F /* HDCollectionViewCell.m */,
+				F1A095452041308B0008384F /* HDCollectionReusableView.h */,
+				F1A095462041308B0008384F /* HDCollectionReusableView.m */,
+				F1A09548204149060008384F /* HDClickButton.h */,
+				F1A09549204149060008384F /* HDClickButton.m */,
+				F1A0954B20414B360008384F /* THOrderModel.h */,
+				F1A0954C20414B360008384F /* THOrderModel.m */,
+				F1A0955620415F660008384F /* THOrderHeaderView.xib */,
+				F1A095582041617D0008384F /* HDCollectionViewController1.h */,
+				F1A095592041617D0008384F /* HDCollectionViewController1.m */,
+				F1A0955B2041660C0008384F /* THOrderHeaderView.h */,
+				F1A0955C2041660C0008384F /* THOrderHeaderView.m */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		F1A0954E20414BBF0008384F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F1A0954F20414BBF0008384F /* Model.pages */,
+				F1A0955020414BBF0008384F /* HDModel.h */,
+				F1A0955120414BBF0008384F /* HDModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		F1FC1398202747DF00CA169D = {
@@ -228,6 +294,7 @@
 		F1FC13D620274A4A00CA169D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				F1A09538204104C30008384F /* collectionView */,
 				186A2333202BE7B200CDC63D /* pullView */,
 				F1FC13D720274A5E00CA169D /* requstButton */,
 			);
@@ -354,7 +421,9 @@
 			files = (
 				F1FC13B1202747DF00CA169D /* LaunchScreen.storyboard in Resources */,
 				186A2349202BEDB200CDC63D /* UIColor+RGB解释.pages in Resources */,
+				F1A0955720415F660008384F /* THOrderHeaderView.xib in Resources */,
 				F1FC13AE202747DF00CA169D /* Assets.xcassets in Resources */,
+				F1A0955220414BBF0008384F /* Model.pages in Resources */,
 				F1FC13AC202747DF00CA169D /* Main.storyboard in Resources */,
 				186A234C202BEDB200CDC63D /* frame.pages in Resources */,
 				186A234A202BEDB200CDC63D /* font.pages in Resources */,
@@ -400,15 +469,24 @@
 			files = (
 				F1FC13DA20274A8A00CA169D /* RequestButtonViewController.m in Sources */,
 				186A234B202BEDB200CDC63D /* UIFont+PxToSize.m in Sources */,
+				F1A0954D20414B360008384F /* THOrderModel.m in Sources */,
 				F1FC13A9202747DF00CA169D /* ViewController.m in Sources */,
 				F1FC13B4202747DF00CA169D /* main.m in Sources */,
+				F1A0954420410AD90008384F /* HDCollectionViewCell.m in Sources */,
 				186A2348202BEDB200CDC63D /* UIColor+RGB.m in Sources */,
+				F1A095472041308B0008384F /* HDCollectionReusableView.m in Sources */,
 				186A2350202BF6A600CDC63D /* PullViewController.m in Sources */,
+				F1A0954A204149060008384F /* HDClickButton.m in Sources */,
+				F1A0955D2041660C0008384F /* THOrderHeaderView.m in Sources */,
 				F1FC13A6202747DF00CA169D /* AppDelegate.m in Sources */,
+				F1A0953E204106EF0008384F /* THOrderViewController.m in Sources */,
 				F1FC13DD20274AFB00CA169D /* HDRequestButton.m in Sources */,
+				F1A0955320414BBF0008384F /* HDModel.m in Sources */,
 				186A234D202BEDB200CDC63D /* UIView+FRAME_SET.m in Sources */,
 				186A2336202BE8F700CDC63D /* HDPullDownView.m in Sources */,
 				186A2347202BEDB200CDC63D /* HDDefault.m in Sources */,
+				F1A0953B204104E50008384F /* HDConllectionView.m in Sources */,
+				F1A0955A2041617D0008384F /* HDCollectionViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
