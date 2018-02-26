@@ -42,14 +42,12 @@
     self.scrollViewItem3 = [[ScrollViewItem alloc] init];
     self.scrollViewItem4 = [[ScrollViewItem alloc] init];
     [self.view addSubview:self.scrollView];
-//    [self.scrollView addSubview:self.scrollViewItem1];
-//    [self.scrollView addSubview:self.scrollViewItem2];
-//    [self.scrollView addSubview:self.scrollViewItem3];
 }
 -(void) setDelegateOrClick{
     
 }
 -(void) setConfig{
+    self.scrollView.itemMinWidth = 120;
     self.scrollViewItem1.title = @"item1";
     self.scrollViewItem2.title = @"item2";
     self.scrollViewItem3.title = @"item3";

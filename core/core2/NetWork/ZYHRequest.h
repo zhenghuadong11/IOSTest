@@ -25,13 +25,34 @@ typedef uint32_t EncryptOption;
 
 @interface ZYHRequest : NSObject
 {
-    NSMutableURLRequest *_request;
+    NSMutableURLRequest * _request;
     NSURLConnection *_connection;
     NSMutableData *_responseData;
 }
 
 + (BOOL)NetWorkIsOK;//检查网络是否可用
 
+#pragma mark --  getRequest
+/**
+ 最普通的get请求
+ */
++(NSURLRequest *)getAsyncRequest:(NSString *)urlStr
+                      parameters:(NSDictionary *)parameters;
+/**
+ * 异步get请求头添加参数请求
+ */
++(NSURLRequest *)getAsyncRequest:(NSString *)urlStr
+                      parameters:(NSDictionary *)parameters headParams:(NSDictionary *) headParams;
+#pragma mark --  put请求
+/**
+ put
+ */
++(NSURLRequest *)putAsyncRequest:(NSString *)urlStr
+                      parameters:(NSDictionary *)parameters headParams:(NSDictionary *) headParams;
+
+
+
+#pragma mark --  post请求
 
 /**
  *  异步POST请求
@@ -39,28 +60,31 @@ typedef uint32_t EncryptOption;
 +(NSURLRequest *)postAsyncRequest:(NSString *)urlStr
                        parameters:(NSDictionary *)parameters;
 
-+(NSURLRequest *)getAsyncRequest:(NSString *)urlStr
-                      parameters:(NSDictionary *)parameters;
-                
 
+                
+/**
+ url可选的request
+ */
 +(NSURLRequest *)postAsyncRequest:(NSString *)urlStr
                        parameters:(NSDictionary *)parameters requestTime:(NSTimeInterval) time;
-
+/**
+ headParam的request
+ */
 +(NSURLRequest *)postAsyncRequest:(NSString *)urlStr
                        parameters:(NSDictionary *)parameters headParams:(NSDictionary *) headParams;
-/*
- * 异步get请求头添加参数请求
- */
-+(NSURLRequest *)getAsyncRequest:(NSString *)urlStr
-                      parameters:(NSDictionary *)parameters headParams:(NSDictionary *) headParams;
 
-/*
-   put
+/**
+ url可选的request
  */
-+(NSURLRequest *)putAsyncRequest:(NSString *)urlStr
-                      parameters:(NSDictionary *)parameters headParams:(NSDictionary *) headParams;
-
 +(NSURLRequest *)postAsyncRequest:(NSString *)urlStr baseUrlNum:(NSInteger) baseUrlNum
                        parameters:(NSDictionary *)parameters;
+/**
+ 返回带有url，param，headParam，overTime，url可选的request
+ */
++(NSURLRequest *)postAsyncRequest:(NSString *)urlStr
+                       parameters:(NSDictionary *)parameters headParams:(NSDictionary *)  headParams requestTime:(NSTimeInterval) time baseURLNum:(NSInteger) urlNum;
+
+
+
 
 @end

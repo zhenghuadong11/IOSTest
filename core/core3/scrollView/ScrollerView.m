@@ -7,12 +7,13 @@
 //
 
 #import "ScrollerView.h"
-//#import "HDunderLineButton.h"
 #import "HDDefault.h"
 @implementation ScrollerView
 {
-    UIView * _titleView;
+    UIScrollView * _titleView;
     UIScrollView * _scrollView;
+    
+    NSMutableArray<UIView *>  * _titleContentViews;
     
     UIButton * lastButton;
     UIView * _scrollUnderLineView;
@@ -32,20 +33,21 @@
 }
 
 -(void) setSubViews{
-    _titleView = [[UIView alloc] init];
+    _titleView = [[UIScrollView alloc] init];
     _scrollView = [[UIScrollView alloc] init];
     _scrollUnderLineView = [[UIView alloc] init];
     
     
     [self addSubview:_titleView];
     [self addSubview:_scrollView];
-    [self addSubview:_scrollUnderLineView];
+    [_titleView addSubview:_scrollUnderLineView];
 }
 -(void) setUIConfig{
     _titleView.backgroundColor = [UIColor whiteColor];
     _scrollUnderLineView.backgroundColor = [UIColor colorWithHexString:@"#4e8af9"];
     _scrollView.pagingEnabled = true;
     _scrollView.bounces = false;
+    _titleView.showsHorizontalScrollIndicator = false;
 }
 -(void) setDelegateOrClick{
     _scrollView.delegate = self;
@@ -58,14 +60,7 @@
     _titleView.frame = Rect_DEFAULT;
     
     
-    x = 0;
-    y = _titleView.maxY - 2;
-    if (self.items != nil) {
-        width = self.width/self.items.count;
-    }
-    
-    height = 2;
-    _scrollUnderLineView.frame = Rect_DEFAULT;
+
     
     
     x = 0;
@@ -75,14 +70,31 @@
     _scrollView.backgroundColor = [UIColor greenColor];
     _scrollView.frame = Rect_DEFAULT;
     
+    if (_titleContentViews.count != 0) {
+        width = self.width/_titleContentViews.count;
+    }
     
-    for (NSInteger index = 0; index < _titleView.subviews.count; index += 1) {
+    
+    if (width < self.itemMinWidth) {
+        width = self.itemMinWidth;
+    }
+    for (NSInteger index = 0; index < _titleContentViews.count; index += 1) {
         y = 0;
-        width = self.width/_titleView.subviews.count;
         x = index * width;
         height = 41;
-        _titleView.subviews[index].frame = Rect_DEFAULT;
+        _titleContentViews[index].frame = Rect_DEFAULT;
     }
+    _titleView.contentSize = CGSizeMake(width * _titleContentViews.count,_titleView.height);
+    
+    
+    x = 0;
+    height = 2;
+    y = _titleView.height - height;
+    
+    
+    _scrollUnderLineView.frame = Rect_DEFAULT;
+    
+    
     for (NSInteger index = 0; index < self.items.count; index += 1) {
         x = self.width * index;
         y = 0;
@@ -91,7 +103,7 @@
         
         self.items[index].frame = Rect_DEFAULT;
     }
-    NSLog(@"%lf",self.width * self.items.count);
+  
     [_scrollView setContentSize:CGSizeMake(self.width * self.items.count, self.height - 41)];
     
 }
@@ -102,7 +114,7 @@
 }
 
 -(void)setItems:(NSArray<ScrollViewItem *> *)items{
-    
+    _titleContentViews = [NSMutableArray array];
     _items = items;
     _itemsNum = items.count;
     for (NSInteger index = 0; index < items.count; index += 1) {
@@ -112,11 +124,11 @@
         
         [button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
         [button setTitleColor:[UIColor colorWithHexString:@"#4e8af9"] forState:(UIControlStateSelected)];
-//        button.backgroundColor = [UIColor grayColor];
+
         button.tag = index;
 
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
-        
+        [_titleContentViews addObject:button];
         [_titleView addSubview:button];
         
 
@@ -155,35 +167,22 @@
 
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    _scrollUnderLineView.x = scrollView.contentOffset.x/_itemsNum;
+    _scrollUnderLineView.x = (scrollView.contentOffset.x/self.width) * _titleContentViews.firstObject.width;
+    if (_titleView.contentOffset.x + self.width < _scrollUnderLineView.maxX) {
+        CGPoint point = _titleView.contentOffset;
+        point.x = _scrollUnderLineView.maxX - self.width;
+        _titleView.contentOffset = point;
+    }
+    if (_titleView.contentOffset.x  > _scrollUnderLineView.x ) {
+        CGPoint point = _titleView.contentOffset;
+        point.x = _scrollUnderLineView.x;
+        _titleView.contentOffset = point;
+    }
+    
     NSInteger pageNum = (NSInteger)(scrollView.contentOffset.x/self.width + 0.5);
-    [self buttonInScroll:_titleView.subviews[pageNum]];
+    [self buttonInScroll:(UIButton *)_titleContentViews[pageNum]];
 }
-//-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-//
-//
-//    NSInteger pageNum = (NSInteger)(scrollView.contentOffset.x/self.width + 0.5);
-//
-//    [UIView animateWithDuration:1 animations:^{
-//        CGPoint point = scrollView.contentOffset;
-//        point.x = pageNum * self.width;
-//        scrollView.contentOffset = point;
-//    }];
-//
-//    [self buttonClick:_titleView.subviews[pageNum]];
-//}
 
-//-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-//    NSInteger pageNum = (NSInteger)(scrollView.contentOffset.x/self.width + 0.5);
-//
-//
-//        CGPoint point = scrollView.contentOffset;
-//        point.x = pageNum * self.width;
-//        scrollView.contentOffset = point;
-//
-//
-//    [self buttonClick:_titleView.subviews[pageNum]];
-//}
 
 
 @end

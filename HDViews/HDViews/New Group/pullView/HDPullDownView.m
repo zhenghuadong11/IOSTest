@@ -11,7 +11,7 @@
 @implementation HDPullDownView
 {
     BOOL _isShow;
-    
+    NSMutableArray<UIView *> * _pullSubViews;
 }
 -(instancetype)init{
     if (self = [super init]) {
@@ -35,6 +35,11 @@
 -(void)setItems:(NSArray<NSObject *> *)items{
     _items = items;
     NSInteger itemNum = items.count;
+    for (UIView * view in _pullSubViews) {
+        [view removeFromSuperview];
+    }
+    _pullSubViews = [NSMutableArray array];
+    
     
     for (NSInteger index = 0; index < itemNum; index += 1) {
         
@@ -45,12 +50,14 @@
             [label setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
             [label addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
             [self addSubview:label];
+            [_pullSubViews addObject:label];
         }else if([items[index] isKindOfClass:[UIImage class]]){
             UIButton * imageBtn = [[UIButton alloc] init];
             [imageBtn setImage:(UIImage *) items[index]  forState:(UIControlStateNormal)];
             imageBtn.tag = index;
             [imageBtn addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
             [self addSubview:imageBtn];
+            [_pullSubViews addObject:imageBtn];
         }
         
     }

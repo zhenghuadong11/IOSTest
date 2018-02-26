@@ -7,9 +7,7 @@
 //
 
 #import "CGNetConnect.h"
-#import "HDNetConnnect.h"
-#import "MYDate.h"
-#import "SecurityUtil.h"
+
 
 @implementation CGNetConnect
 

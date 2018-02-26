@@ -12,4 +12,5 @@
 @interface ScrollerView : UIView <UIScrollViewDelegate>
 @property(nonatomic,strong) NSArray<ScrollViewItem *> * items;
 
+@property(nonatomic,assign) CGFloat itemMinWidth;
 @end

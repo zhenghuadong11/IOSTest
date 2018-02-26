@@ -41,8 +41,8 @@
 //    [self.view addSubview:buttonBackView];
     self.navigationItem.titleView = button;
     self.pullView = [[HDPullDownView alloc] init];
-    self.pullView.items = @[@"23",@"45",[UIImage imageNamed:@"orange"]];
-
+    self.pullView.items = @[@"23",[UIImage imageNamed:@"orange"],@"45"];
+self.pullView.items = @[@"23",[UIImage imageNamed:@"orange"]];
 }
 -(void) buttonClick:(UIButton *) button{
 

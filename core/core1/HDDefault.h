@@ -30,11 +30,11 @@
 #define PIWithAngle(x) (x/180.0*M_PI_2 * 2)
 
 #ifdef DEBUG
-#define MYLog(...) NSLog(__VA_ARGS__)
-#define MYLogMethod() NSLog(@"%s",__func__)
+#define HDLog(...) NSLog(__VA_ARGS__)
+#define HDLogMethod() NSLog(@"%s",__func__)
 #else
-#define MYLog(...)
-#define MYLogMethod()
+#define HDLog(...)
+#define HDLogMethod()
 #endif
 
 @interface HDDefault : NSObject
