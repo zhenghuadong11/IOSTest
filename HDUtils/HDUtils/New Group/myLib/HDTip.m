@@ -21,7 +21,7 @@
             }];
             [alertController addAction:cancelAction];
             
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+            [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
         } else {
             // Fallback on earlier versions
         }
@@ -29,6 +29,14 @@
         UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"好的" otherButtonTitles: nil];
         [alertView show];
     }
+}
+
++(UIViewController *) lastPresentVC{
+    UIViewController * vc =  [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (vc.presentedViewController) {
+        vc = [vc presentedViewController];
+    }
+    return vc;
 }
 
 +(void)alertTipTitle:(NSString *)title message:(NSString *)message buttons:(NSArray<NSString *> *)buttonNames actions:(NSDictionary<NSString *,void (^)(void)> *)actions{
@@ -49,7 +57,7 @@
         
         
         
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+        [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
     }
     
 
@@ -73,7 +81,7 @@
         
         
         
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+        [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
     }
     
 

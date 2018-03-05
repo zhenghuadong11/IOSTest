@@ -20,6 +20,14 @@
 		F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */ = {isa = PBXBuildFile; fileRef = F1142633202F3ADA000D6ACA /* NSString+date.m */; };
 		F12AEAC72033F6A10028C01C /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F12AEAC62033F6A10028C01C /* NSObject+Util.m */; };
 		F12AEACB20347C860028C01C /* HDValite.m in Sources */ = {isa = PBXBuildFile; fileRef = F12AEACA20347C860028C01C /* HDValite.m */; };
+		F168935B204BE4320000DCE9 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F168935A204BE4320000DCE9 /* TipViewController.m */; };
+		F168935E204BE51D0000DCE9 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F168935D204BE51D0000DCE9 /* TipView.m */; };
+		F168936C204BF3F50000DCE9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F1689360204BF3F50000DCE9 /* Reachability.m */; };
+		F168936D204BF3F50000DCE9 /* HDUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1689363204BF3F50000DCE9 /* HDUploadRequest.m */; };
+		F168936E204BF3F50000DCE9 /* CGNetConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = F1689365204BF3F50000DCE9 /* CGNetConnect.m */; };
+		F168936F204BF3F50000DCE9 /* NetWork解释.pages in Resources */ = {isa = PBXBuildFile; fileRef = F1689367204BF3F50000DCE9 /* NetWork解释.pages */; };
+		F1689370204BF3F50000DCE9 /* HDNetConnnect.m in Sources */ = {isa = PBXBuildFile; fileRef = F1689369204BF3F50000DCE9 /* HDNetConnnect.m */; };
+		F1689371204BF3F50000DCE9 /* ZYHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F168936A204BF3F50000DCE9 /* ZYHRequest.m */; };
 		F169A9062028AECC0036805F /* HDNullUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9052028AECC0036805F /* HDNullUtil.m */; };
 		F169A90A2028B0AC0036805F /* HDTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A9082028B0AC0036805F /* HDTip.m */; };
 		F169A90E2028B1E90036805F /* NullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F169A90C2028B1E90036805F /* NullViewController.m */; };
@@ -82,6 +90,21 @@
 		F12AEAC62033F6A10028C01C /* NSObject+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
 		F12AEAC920347C860028C01C /* HDValite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDValite.h; sourceTree = "<group>"; };
 		F12AEACA20347C860028C01C /* HDValite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDValite.m; sourceTree = "<group>"; };
+		F1689359204BE4320000DCE9 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		F168935A204BE4320000DCE9 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		F168935C204BE51D0000DCE9 /* TipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		F168935D204BE51D0000DCE9 /* TipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
+		F1689360204BF3F50000DCE9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F1689361204BF3F50000DCE9 /* ZYHRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHRequest.h; sourceTree = "<group>"; };
+		F1689362204BF3F50000DCE9 /* HDNetConnnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDNetConnnect.h; sourceTree = "<group>"; };
+		F1689363204BF3F50000DCE9 /* HDUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDUploadRequest.m; sourceTree = "<group>"; };
+		F1689365204BF3F50000DCE9 /* CGNetConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGNetConnect.m; sourceTree = "<group>"; };
+		F1689366204BF3F50000DCE9 /* CGNetConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGNetConnect.h; sourceTree = "<group>"; };
+		F1689367204BF3F50000DCE9 /* NetWork解释.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NetWork解释.pages"; sourceTree = "<group>"; };
+		F1689368204BF3F50000DCE9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F1689369204BF3F50000DCE9 /* HDNetConnnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDNetConnnect.m; sourceTree = "<group>"; };
+		F168936A204BF3F50000DCE9 /* ZYHRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHRequest.m; sourceTree = "<group>"; };
+		F168936B204BF3F50000DCE9 /* HDUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDUploadRequest.h; sourceTree = "<group>"; };
 		F169A9042028AECC0036805F /* HDNullUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNullUtil.h; sourceTree = "<group>"; };
 		F169A9052028AECC0036805F /* HDNullUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNullUtil.m; sourceTree = "<group>"; };
 		F169A9082028B0AC0036805F /* HDTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTip.m; sourceTree = "<group>"; };
@@ -150,6 +173,7 @@
 		F10B6DBE203FF9A100AEF664 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F168935F204BF3F50000DCE9 /* NetWork */,
 				F10B6DC0203FF9BC00AEF664 /* core1 */,
 				F10B6DBF203FF9BC00AEF664 /* HDDefault.h */,
 				F10B6DCD203FF9BC00AEF664 /* HDDefault.m */,
@@ -229,6 +253,32 @@
 			path = valite;
 			sourceTree = "<group>";
 		};
+		F168935F204BF3F50000DCE9 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				F1689360204BF3F50000DCE9 /* Reachability.m */,
+				F1689361204BF3F50000DCE9 /* ZYHRequest.h */,
+				F1689362204BF3F50000DCE9 /* HDNetConnnect.h */,
+				F1689363204BF3F50000DCE9 /* HDUploadRequest.m */,
+				F1689364204BF3F50000DCE9 /* CG */,
+				F1689367204BF3F50000DCE9 /* NetWork解释.pages */,
+				F1689368204BF3F50000DCE9 /* Reachability.h */,
+				F1689369204BF3F50000DCE9 /* HDNetConnnect.m */,
+				F168936A204BF3F50000DCE9 /* ZYHRequest.m */,
+				F168936B204BF3F50000DCE9 /* HDUploadRequest.h */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		F1689364204BF3F50000DCE9 /* CG */ = {
+			isa = PBXGroup;
+			children = (
+				F1689365204BF3F50000DCE9 /* CGNetConnect.m */,
+				F1689366204BF3F50000DCE9 /* CGNetConnect.h */,
+			);
+			path = CG;
+			sourceTree = "<group>";
+		};
 		F169A9032028AE440036805F /* nullUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +296,10 @@
 			children = (
 				F169A9092028B0AC0036805F /* HDTip.h */,
 				F169A9082028B0AC0036805F /* HDTip.m */,
+				F1689359204BE4320000DCE9 /* TipViewController.h */,
+				F168935A204BE4320000DCE9 /* TipViewController.m */,
+				F168935C204BE51D0000DCE9 /* TipView.h */,
+				F168935D204BE51D0000DCE9 /* TipView.m */,
 			);
 			path = myLib;
 			sourceTree = "<group>";
@@ -467,6 +521,7 @@
 				F1E8A088203F0EDE00410AD7 /* animation.pages in Resources */,
 				F169A90F2028B1E90036805F /* NullViewController.xib in Resources */,
 				F10B6DCE203FF9BC00AEF664 /* UIColor+RGB解释.pages in Resources */,
+				F168936F204BF3F50000DCE9 /* NetWork解释.pages in Resources */,
 				F10B6DD1203FF9BC00AEF664 /* frame.pages in Resources */,
 				F1FC13F52027536B00CA169D /* Assets.xcassets in Resources */,
 				F10B6DD3203FF9BC00AEF664 /* font.pages in Resources */,
@@ -500,22 +555,29 @@
 				F10B6DD2203FF9BC00AEF664 /* UIFont+PxToSize.m in Sources */,
 				F10B6DCF203FF9BC00AEF664 /* UIColor+RGB.m in Sources */,
 				F1FC13F02027536B00CA169D /* ViewController.m in Sources */,
+				F168936C204BF3F50000DCE9 /* Reachability.m in Sources */,
 				F114262D202F38A6000D6ACA /* DateViewController.m in Sources */,
 				F1FC14202027542100CA169D /* HDShowViewController.m in Sources */,
+				F168936E204BF3F50000DCE9 /* CGNetConnect.m in Sources */,
 				F1FC13FB2027536B00CA169D /* main.m in Sources */,
 				F1142631202F3A71000D6ACA /* NSDate+Time.m in Sources */,
 				F10B6DD0203FF9BC00AEF664 /* UIView+FRAME_SET.m in Sources */,
 				F10B6DD4203FF9BC00AEF664 /* HDDefault.m in Sources */,
 				F1E8A08B203F0F5E00410AD7 /* HDAnimationUtil.m in Sources */,
 				F169A9062028AECC0036805F /* HDNullUtil.m in Sources */,
+				F168935E204BE51D0000DCE9 /* TipView.m in Sources */,
+				F168935B204BE4320000DCE9 /* TipViewController.m in Sources */,
 				F12AEACB20347C860028C01C /* HDValite.m in Sources */,
+				F168936D204BF3F50000DCE9 /* HDUploadRequest.m in Sources */,
 				F1E8A08E203F113600410AD7 /* AnimationViewController.m in Sources */,
 				F12AEAC72033F6A10028C01C /* NSObject+Util.m in Sources */,
 				F1FC13ED2027536B00CA169D /* AppDelegate.m in Sources */,
 				F169A90A2028B0AC0036805F /* HDTip.m in Sources */,
 				F1142634202F3ADA000D6ACA /* NSString+date.m in Sources */,
 				F1E8A091203F180A00410AD7 /* HDAnimationModel.m in Sources */,
+				F1689371204BF3F50000DCE9 /* ZYHRequest.m in Sources */,
 				F169A90E2028B1E90036805F /* NullViewController.m in Sources */,
+				F1689370204BF3F50000DCE9 /* HDNetConnnect.m in Sources */,
 				F1FC1427202755EB00CA169D /* HDKeyBoardHeightUtil.m in Sources */,
 				F1FC142B2027613500CA169D /* HDColorUtil.m in Sources */,
 			);

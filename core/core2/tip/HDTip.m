@@ -22,7 +22,7 @@
             }];
             [alertController addAction:cancelAction];
             
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+            [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
         } else {
             // Fallback on earlier versions
         }
@@ -50,7 +50,7 @@
         
         
         
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+        [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
     }
     
 
@@ -74,7 +74,7 @@
         
         
         
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:true completion:nil];
+        [[self lastPresentVC] presentViewController:alertController animated:true completion:nil];
     }else{
         HDTipVC * vc = [[HDTipVC alloc] init];
         vc.tipTitle = title;
@@ -187,8 +187,13 @@
 -(void)setProgress:(CGFloat)progress{
     self.progressHUD.progress = progress;
 }
-
-
++(UIViewController *) lastPresentVC{
+    UIViewController * vc =  [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (vc.presentedViewController) {
+        vc = [vc presentedViewController];
+    }
+    return vc;
+}
 
 + (NSArray<NSString *> *)actionUseNum: (NSString *)actionNum, ...NS_REQUIRES_NIL_TERMINATION{
     NSMutableArray *argsArray = [[NSMutableArray alloc] init];

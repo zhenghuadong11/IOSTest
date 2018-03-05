@@ -11,6 +11,8 @@
 #import "NullViewController.h"
 #import "DateViewController.h"
 #import "AnimationViewController.h"
+#import "HDTip.h"
+#import "TipViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,18 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.models = @[@"键盘弹出高度处理",@"对空的处理",@"日期处理",@"动画"];
+    self.models = @[@"键盘弹出高度处理",@"对空的处理",@"日期处理",@"动画",@"提示"];
     self.nextControllers = @[[[KeyBoardHeihgtViewController alloc] init],            [[NullViewController alloc] init],
         [[DateViewController alloc] init],
-        [[AnimationViewController alloc] init]];
+        [[AnimationViewController alloc] init],[[TipViewController alloc] init]];
     // Do any additional setup after loading the view, typically from a nib.
 //    NSMutableArray
     
     
 
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

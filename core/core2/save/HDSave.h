@@ -47,10 +47,23 @@
 +(NSDictionary *) getDict:(NSDictionary *) object andSpecialFile:(NSString *)file;
 
 #pragma mark --  本地sql
+
+/**
+ 在数据库sqlString中执行数据库语句excuteString；
+
+ @param sqlString 数据库的名字，传nil的时候默认为HDSQL
+ @param excuteString 数据库执行语句
+ @return 执行是否成功
+ */
 +(BOOL) sqlDBName:(NSString *) sqlString excuteString:(NSString *) excuteString;
+/**
+ 数据库查询
+
+ @param sqlString 数据库的名字，
+ @param selectString 数据库的名字，传nil的时候默认为HDSQL
+ @return 返回查询的结果，nil的时候是查询错误，空的时候是没有相应数据
+ */
 +(NSArray *) sqlDBName:(NSString *) sqlString selectString:(NSString *) selectString;
-+(BOOL) sqlDBName:(NSString *) sqlString excuteStrings:(NSArray<NSString *> *) excuteStrings;
 
-
-
++(BOOL) sqlDBName:(NSString *) sqlString;
 @end

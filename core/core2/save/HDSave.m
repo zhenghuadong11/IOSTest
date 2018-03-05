@@ -9,10 +9,11 @@
 #import "HDSave.h"
 
 @implementation HDSave
+#define DefaultSql @"HDSQL"
 #pragma mark --  coding
 +(BOOL)saveWithObject:(id)object andSpecialFile:(NSString *)file{
     NSString * baseStr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
-     NSString * path = [baseStr stringByAppendingPathComponent:file];
+    NSString * path = [baseStr stringByAppendingPathComponent:file];
     
     BOOL save = [NSKeyedArchiver archiveRootObject:object toFile:path];
     return save;
@@ -20,9 +21,9 @@
 
 +(id)getWidthFile:(NSString *)file{
     NSString * baseStr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
-     NSString * path = [baseStr stringByAppendingPathComponent:file];
-
-     return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSString * path = [baseStr stringByAppendingPathComponent:file];
+    
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
 }
 
 #pragma mark --  userDefault
@@ -57,9 +58,12 @@
 +(BOOL) sqlDBName:(NSString *) sqlString excuteString:(NSString *) excuteString{
     //1.获取数据库文件的路径
     NSString * docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-   
+    if (sqlString == nil) {
+        sqlString = DefaultSql;
+    }
+    docPath = @"/Users/apple/Desktop";
     NSString * sqlName = [sqlString stringByAppendingString:@".sqlite"];
-   
+    
     //设置数据库名称
     NSString * fileName = [docPath stringByAppendingPathComponent:sqlName];
     NSLog(@"%@",fileName);
@@ -69,12 +73,53 @@
         NSLog(@"打开数据库失败");
         return false;
     }else{
-        NSLog(@"打开成功");
+        BOOL isSuccess = [database executeUpdate:excuteString];
+        if (![database close]) {
+            NSLog(@"数据库关闭失败");
+        }else{
+            NSLog(@"数据库关闭成功");
+        }
+        
+        return isSuccess;
     }
     
-    return false;
 }
 +(NSArray *) sqlDBName:(NSString *) sqlString selectString:(NSString *) selectString{
+    NSString * docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    if (sqlString == nil) {
+        sqlString = DefaultSql;
+    }
+    
+    docPath = @"/Users/apple/Desktop";
+    
+    NSString * sqlName = [sqlString stringByAppendingString:@".sqlite"];
+    
+    //设置数据库名称
+    NSString * fileName = [docPath stringByAppendingPathComponent:sqlName];
+    NSLog(@"%@",fileName);
+    //2.获取数据库
+    
+    FMDatabase * database = [FMDatabase databaseWithPath:fileName];
+    if (![database open]) {
+        NSLog(@"打开数据库失败");
+        return nil;
+    }
+    FMResultSet * res = [database executeQuery:selectString];
+    
+    NSMutableArray * mArray = [NSMutableArray array];
+    
+    while ([res next]) {
+        NSLog(@"%@",res.resultDictionary);
+    }
+    
+    if (![database close]) {
+        NSLog(@"数据库关闭失败");
+    }else{
+        NSLog(@"数据库关闭成功");
+    }
+    
+    
+    
     return @[];
 }
 @end
