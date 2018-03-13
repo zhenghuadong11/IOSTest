@@ -87,6 +87,18 @@ typedef enum{
  *  可以选择base——url的请求
  */
 +(void) requestBaseDicBlockWithUrlStr:(NSString *) url params:(NSDictionary *)params withBaseUrlNum:(NSInteger)baseUrlNum successBlock:(void(^)(NSDictionary * result)) successBlock failtureBlock:(void(^)(NSError * result)) failtureBlock;
+
+/**
+ 带有url，头参数，请求时间的好用dict请求
+
+ @param url <#url description#>
+ @param params <#params description#>
+ @param headParams <#headParams description#>
+ @param time <#time description#>
+ @param baseUrlNum <#baseUrlNum description#>
+ @param successBlock <#successBlock description#>
+ @param failtureBlock <#failtureBlock description#>
+ */
 +(void) requestBaseDicBlockWithUrlStr:(NSString *) url params:(NSDictionary *)params headParams:(NSDictionary *)headParams requestTime:(NSTimeInterval) time baseUrlNum:(NSInteger)baseUrlNum successBlock:(void(^)(NSDictionary * result)) successBlock failtureBlock:(void(^)(NSError * result)) failtureBlock;
 #pragma mark --  request的base请求
 /**

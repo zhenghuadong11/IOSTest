@@ -7,15 +7,15 @@
 //
 
 #import "HDPullDownView.h"
-#import "HDDefault.h"
+#import "THDefault.h"
 @implementation HDPullDownView
 {
     BOOL _isShow;
-    
+    NSMutableArray<UIView *> * _pullSubViews;
 }
 -(instancetype)init{
     if (self = [super init]) {
-        self.originHeight = 130;
+        self.originHeight = 260;
         self.itemHeight = 40;
         _isShow = true;
         [self setUIConfig];
@@ -35,6 +35,11 @@
 -(void)setItems:(NSArray<NSObject *> *)items{
     _items = items;
     NSInteger itemNum = items.count;
+    for (UIView * view in _pullSubViews) {
+        [view removeFromSuperview];
+    }
+    _pullSubViews = [NSMutableArray array];
+    
     
     for (NSInteger index = 0; index < itemNum; index += 1) {
         
@@ -45,12 +50,14 @@
             [label setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
             [label addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
             [self addSubview:label];
+            [_pullSubViews addObject:label];
         }else if([items[index] isKindOfClass:[UIImage class]]){
             UIButton * imageBtn = [[UIButton alloc] init];
             [imageBtn setImage:(UIImage *) items[index]  forState:(UIControlStateNormal)];
             imageBtn.tag = index;
             [imageBtn addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
             [self addSubview:imageBtn];
+            [_pullSubViews addObject:imageBtn];
         }
         
     }
@@ -63,8 +70,8 @@
         _isShow = false;
         CGPoint converPoint = [view convertPoint:CGPointMake(0,view.height) toView:parentView];
         
-        NSLog(@"view frame %@",NSStringFromCGRect(view.frame));
-        NSLog(@"converPoint %@",NSStringFromCGPoint(converPoint));
+        MYLog(@"view frame %@",NSStringFromCGRect(view.frame));
+        MYLog(@"converPoint %@",NSStringFromCGPoint(converPoint));
         
         
         
@@ -77,7 +84,9 @@
         }
         
         [self setFrameOrLayout];
-        CGFloat height = self.originHeight;
+        CGFloat height = self.height;
+       
+        
         
         self.height = 0;
         [UIView animateWithDuration:0.3 animations:^{
@@ -114,12 +123,15 @@
     }else{
         self.height = self.originHeight;
     }
-    
+
+
     
     
     CGFloat contentHeight = self.itemHeight * self.items.count;
     CGFloat contentWidth = self.width;
-    
+    if (contentHeight < self.height) {
+        self.height = contentHeight;
+    }
     
     CGFloat x = 0;
     CGFloat y = 0;
@@ -137,4 +149,6 @@
     
 }
 
+
 @end
+

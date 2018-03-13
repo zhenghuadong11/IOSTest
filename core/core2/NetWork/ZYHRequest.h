@@ -19,7 +19,8 @@ typedef uint32_t EncryptOption;
 //http://192.168.16.4:8082/
 //http://192.168.16.222:8082/
 //http://ucenter.yiyangzzt.com/
-#define BASE_URL @"http://yun.yiyangzzt.com/"
+//http://localhost:8080/SpringTest/value2
+#define BASE_URL @"http://localhost:8080/"
 #define BASE_URL1 @"http://yun.yiyangzzt.com/"
 //192.168.16.222:8080
 

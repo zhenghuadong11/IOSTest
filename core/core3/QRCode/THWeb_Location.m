@@ -11,6 +11,7 @@
 
 @implementation THWeb_Location{
     BOOL _isStartLocation;
+    NSInteger _getNum;
 }
 -(instancetype)init{
     if (self = [super init]) {
@@ -54,6 +55,7 @@
             break;
         case kCLAuthorizationStatusAuthorizedAlways:
             _isStartLocation = true;
+            _getNum = 0;
             [self.lManager startUpdatingLocation];
             break;
             
@@ -136,6 +138,7 @@
             }
             if (_isStartLocation == false) {
                 _isStartLocation = true;
+                _getNum = 0;
                 [self.lManager startUpdatingLocation];
             }
             break;
@@ -145,6 +148,7 @@
         case kCLAuthorizationStatusAuthorizedAlways:
             if (_isStartLocation == false) {
                 _isStartLocation = true;
+                _getNum = 0;
                 [self.lManager startUpdatingLocation];
             }
             break;
@@ -157,7 +161,13 @@
 }
 #pragma mark CLLocationManagerDelegate
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    _getNum += 1;
+    
     [manager stopUpdatingLocation];
+    
+    if (_getNum > 1) {
+        return;
+    }
     if ([self.delegate respondsToSelector:@selector(THWeb_Location:longitude:latitude:)]) {
         NSString * latitudeStr = [NSString stringWithFormat:@"%f",locations.firstObject.coordinate.latitude];
         NSString * longitudeStr = [NSString stringWithFormat:@"%f",locations.firstObject.coordinate.longitude];

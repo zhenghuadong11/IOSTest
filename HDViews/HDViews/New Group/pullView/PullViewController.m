@@ -47,8 +47,6 @@ self.pullView.items = @[@"23",[UIImage imageNamed:@"orange"]];
 -(void) buttonClick:(UIButton *) button{
 
 
-    
-    
     [self.pullView troggleToView:button parentView:self.view];
 }
 

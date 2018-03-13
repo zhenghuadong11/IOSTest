@@ -31,6 +31,6 @@
 @property(nonatomic,assign) CGFloat originHeight;
 
 -(void) troggleToView:(UIView *) view parentView:(UIView *) parentView;
-
+-(void) close;
 
 @end
