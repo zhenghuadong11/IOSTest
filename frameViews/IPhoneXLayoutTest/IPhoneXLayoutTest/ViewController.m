@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
+@property(nonatomic,strong) UIButton * button;
 
 @end
 
@@ -17,15 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //    [self setStatusBarBackgroundColor:[UIColor blueColor]];
+    self.safeContentView.backgroundColor = [UIColor blueColor];
     
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *button = [[UIButton alloc] init];
+    button.backgroundColor = [UIColor purpleColor];
+    [self.safeContentView addSubview:button];
+    self.button = button;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) setFrameOrLayout{
+    [super setFrameOrLayout];
+    
+    self.button.frame = CGRectMake(0,0, self.safeContentView.frame.size.width/2, 100);
+    
 }
-
 
 @end
